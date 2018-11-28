@@ -1,0 +1,110 @@
+/**app.wxss**/
+
+/* 字体图标 */
+@import "style/iconfont.wxss";
+
+view, text, icon, input {
+  box-sizing: border-box;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  font-size: 28rpx;
+}
+
+/* 点击态 */
+
+.hover-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.block-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 隐藏滚动条 */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* button */
+.container .van-button--normal {
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+.container .van-button {
+  display: block;
+  height: 70rpx;
+  line-height: 66rpx;
+}
+.container .van-button--primary {
+  background-color: #f29e2e;
+  border-color: #f29e2e;
+}
+.container .van-button--default {
+  color: #f29e2e;
+  border-color: #f29e2e;
+}
+
+button::after {
+  border: none;
+}
+
+/* 中间内容 */
+.main {
+  overflow-y: scroll;
+}
+
+/* 底部提示 */
+.page-end {
+  padding: 30rpx 46rpx;
+}
+.page-end .line {
+  height: 0;
+  border-bottom: 1px solid #ddd;
+}
+/* 底部提示
+<view class='page-end pd-30 color-gray d-fl al-center'>
+  <text class='line fl-1'></text>
+  <text class='mlr-10'>我是有底线的</text>
+  <text class='line fl-1'></text>
+</view> */
+
+/* 底部返回按钮 
+<view class='page-back-btn bg-white pd-30'>
+  <navigator open-type='navigateBack'>
+    <van-button type='primary'>返回</van-button>
+  </navigator>
+</view> */
+
+
+/* 快捷工具样式 */
+@import "style/tool.wxss";

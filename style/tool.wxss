@@ -1,0 +1,278 @@
+/* 工具类 */
+
+/* 主题色 */
+
+.theme-color {
+  color: #fa595e;
+}
+
+.theme-bg {
+  background-color: #fa595e;
+}
+
+.theme-border {
+  border: 1px solid #fa595e;
+}
+.theme-b-b {
+  border-bottom: 1px solid #fa595e;
+}
+
+/* 灰色边框 */
+.gray-border {
+  border: 1px solid #bdc5cb;
+}
+.gray-b-b {
+  border-bottom: 1px solid #bdc5cb;
+}
+
+/* placeholder 字体颜色 */
+.ph-color {
+  color: #c9d0d4;
+}
+
+/* 白色背景 */
+
+.bg-white {
+  background-color: #fff;
+}
+
+/* 白色字体 */
+.color-white {
+  color: #fff;
+}
+
+
+.fs-58 {
+  font-size: 58rpx;
+}
+
+/* 18号 字体 */
+.fs-36 {
+  font-size: 36rpx;
+}
+
+/* 16号 字体 */
+.fs-32 {
+  font-size: 32rpx;
+}
+/* 15号 */
+.fs-30 {
+  font-size: 30rpx;
+}
+
+/* 12号 字体 */
+.fs-24 {
+  font-size: 24rpx;
+}
+
+/* 11号 字体 */
+.fs-22 {
+  font-size: 22rpx;
+}
+
+/* 10号 字体 */
+.fs-20 {
+  font-size: 20rpx;
+}
+
+
+/* 对齐方式 */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* 定位 */
+
+.pr {
+  position: relative;
+}
+
+/* 内边距 */
+
+.pd-tb2-lr3 {
+  padding: 20rpx 30rpx;
+}
+
+.pd-lr-30 {
+  padding: 0 30rpx;
+}
+
+.pd-lr-20 {
+  padding: 0 20rpx;
+}
+
+.pd-tb-26 {
+  padding: 26rpx 0;
+}
+
+.pd-tb-20 {
+  padding: 20rpx 0;
+}
+
+.pd-tb-10 {
+  padding: 10rpx 0;
+}
+
+.pb-60 {
+  padding-bottom: 60rpx;
+}
+
+.pb-30 {
+  padding-bottom: 30rpx;
+}
+
+.pb-20 {
+  padding-bottom: 20rpx;
+}
+
+.pl-20 {
+  padding-left: 20rpx;
+}
+
+/* 外边距 */
+.mr-32 {
+  margin-right: 32rpx;
+}
+
+.mr-10 {
+  margin-right: 10rpx;
+}
+
+.ml-24 {
+  margin-left: 24rpx;
+}
+.ml-20 {
+  margin-left: 20rpx;
+}
+
+.mb-60 {
+  margin-bottom: 60rpx;
+}
+
+.mb-45 {
+  margin-bottom: 45rpx;
+}
+
+.mb-35 {
+  margin-bottom: 35rpx;
+}
+
+.mb-26 {
+  margin-bottom: 26rpx;
+}
+
+.mb-20 {
+  margin-bottom: 20rpx;
+}
+
+.mb-10 {
+  margin-bottom: 10rpx;
+}
+
+.mb-0 {
+  margin-bottom: 0rpx;
+}
+
+.mlr-30 {
+  margin: 0 30rpx;
+}
+
+.mlr-10 {
+  margin: 0 10rpx;
+}
+
+/* 行高 */
+
+.lh-72 {
+  line-height: 72rpx;
+}
+
+.lh-42 {
+  line-height: 42rpx;
+}
+
+/* 盒模型 */
+
+.dis-in {
+  display: inline;
+}
+
+/* 盒子阴影 */
+
+.box-sh {
+  box-shadow: 0px 0.3px 0.1px 0 #acacac;
+}
+
+.box-sh-all {
+  box-shadow: 0px 0 5px 0 #acacac;
+}
+
+/* 盒子内容溢出处理 */
+
+.of-hidden {
+  overflow: hidden;
+}
+
+.of-x-scroll {
+  overflow-x: scroll;
+}
+
+/* 圆角边框 */
+
+.br-6 {
+  border-radius: 6rpx;
+}
+
+.br-half {
+  border-radius: 50%;
+}
+
+/* 单行文本溢出省略 */
+
+/* 注：此类当前对flex 布局有破坏效果，测试为 white-space: nowrap 的属性问题 */
+/* 可以将这个类放到 需要溢出隐藏的元素的父级元素上 */
+
+.text-ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* flex 自适应 */
+
+.d-fl {
+  display: flex;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-space-b {
+  justify-content: space-between;
+}
+
+.fl-1 {
+  flex: 1;
+}
+
+.fl-col {
+  flex-direction: column;
+}
+
+.al-s-center {
+  align-self: center;
+}
