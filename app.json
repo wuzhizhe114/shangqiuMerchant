@@ -1,12 +1,50 @@
 {
-  "pages":[
+  "pages": [
+    "pages/login/login",
+    "pages/regist/regist",
     "pages/index/index",
+    "pages/credit/credit",
+    "pages/product/product",
+    "pages/person/person",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#666",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh ": true
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#fff",
+    "backgroundColor": "#fa595e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/footer/home.png",
+        "selectedIconPath": "images/footer/home_on.png"
+      },
+      {
+        "pagePath": "pages/credit/credit",
+        "text": "信用",
+        "iconPath": "images/footer/credit.png",
+        "selectedIconPath": "images/footer/credit_on.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "商品",
+        "iconPath": "images/footer/product.png",
+        "selectedIconPath": "images/footer/product_on.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人",
+        "iconPath": "images/footer/person.png",
+        "selectedIconPath": "images/footer/person_on.png"
+      }
+    ]
   }
 }

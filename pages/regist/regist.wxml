@@ -1,0 +1,36 @@
+<!--pages/regist/regist.wxml-->
+<view class='container'>
+  <view class='regist-box pd-lr-30 mt-b30' hidden='{{stepActive === "3"}}'>
+    <van-steps steps="{{ steps }}" active="{{ stepActive }}" active-color="{{ themeColor }}" />
+    <view class='setp1' hidden='{{!(stepActive === "0")}}'>
+      <van-field placeholder="请输入您的手机号" border="{{false}}" placeholder-style="color:#c9d0d4;" bind:change="onChange" type="number" />
+      <van-button type='primary' data-active="1" bind:click="stepGo">获取验证码</van-button>
+    </view>
+    <view class='setp2' hidden='{{!(stepActive === "1")}}'>
+      <van-field placeholder="请输入短信中的验证码" border="{{false}}" placeholder-style="color:#c9d0d4;" bind:change="onChange" type="number" />
+      <van-button type='primary' data-active="2" bind:click="stepGo">提交验证码</van-button>
+    </view>
+    <view class='setp3' hidden='{{!(stepActive === "2")}}'>
+      <van-field placeholder="请输入密码" border="{{false}}" placeholder-style="color:#c9d0d4;" bind:change="onChange" type="password" />
+      <van-field placeholder="请确认密码" border="{{false}}" placeholder-style="color:#c9d0d4;" bind:change="onChange" type="password" />
+      <view class='color-gray fs-20 pl-40'>密码长度8-32位，须包含数字、字母、符号至少2种或以上元素</view>
+      <van-button type='primary' data-active="3" bind:click="stepGo">确认提交</van-button>
+    </view>
+  </view>
+  <view class='success-box text-center' hidden='{{stepActive != "3"}}'>
+    <view class='mt-126 mb-26'>
+      <text class='iconfont icon-chenggong theme-color'></text>
+    </view>
+    <view class="fs-42">注册成功</view>
+    <view class='tips text-left color-gray'>
+      <text>为了保证您能正常的进行信用经营，签订电子合同前，请进行主体认证！</text>
+    </view>
+    <view class='pd-tb2-lr3'>
+      <van-button type='primary'>主体认证</van-button>
+      <navigator url='/pages/login/login' hover-class='none'>
+        <van-button>暂不认证，直接登录</van-button>
+      </navigator>
+    </view>
+  </view>
+  <van-notify id="custom-selector" />
+</view>

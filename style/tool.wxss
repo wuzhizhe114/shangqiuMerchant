@@ -35,17 +35,40 @@
 .bg-white {
   background-color: #fff;
 }
+/* 灰色背景 */
+.bg-gray {
+  background: #f2f2f2;
+}
+.bg-gray2 {
+  background: #a2a8af !important;
+}
 
 /* 白色字体 */
 .color-white {
   color: #fff;
 }
+.color-gray {
+  color: #a6abaf;
+}
+.color-blue {
+  color: #358ef2;
+}
 
 
+.fs-80 {
+  font-size: 80rpx;
+}
 .fs-58 {
   font-size: 58rpx;
 }
 
+.fs-46 {
+  font-size: 46rpx;
+}
+/* 21号 字体 */
+.fs-42 {
+  font-size: 42rpx;
+}
 /* 18号 字体 */
 .fs-36 {
   font-size: 36rpx;
@@ -81,7 +104,9 @@
 .text-center {
   text-align: center;
 }
-
+.text-left {
+  text-align: left;
+}
 .text-right {
   text-align: right;
 }
@@ -118,6 +143,9 @@
   padding: 10rpx 0;
 }
 
+.pt-b40 {
+  padding-top: 40%;
+}
 .pb-60 {
   padding-bottom: 60rpx;
 }
@@ -130,11 +158,23 @@
   padding-bottom: 20rpx;
 }
 
+.pl-40 {
+  padding-left: 40rpx;
+}
 .pl-20 {
   padding-left: 20rpx;
 }
 
 /* 外边距 */
+.mt-b30 {
+  margin-top: 30%;
+}
+.mt-b20 {
+  margin-top: 20%;
+}
+.mt-126 {
+  margin-top: 126rpx;
+}
 .mr-32 {
   margin-right: 32rpx;
 }
@@ -188,6 +228,9 @@
 
 /* 行高 */
 
+.lh-90 {
+  line-height: 90rpx;
+}
 .lh-72 {
   line-height: 72rpx;
 }
@@ -275,4 +318,14 @@
 
 .al-s-center {
   align-self: center;
+}
+
+.weixin-green {
+  color: #58bc47;
+}
+.weibo-red {
+  color: #d81e06;
+}
+.user-pink {
+  color: #fa595e;
 }

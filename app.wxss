@@ -21,7 +21,6 @@ page {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background: #f2f2f2;
   font-size: 28rpx;
 }
 
@@ -60,23 +59,64 @@ page {
   padding: 0 20rpx;
   font-size: 28rpx;
 }
+.container .van-button--small {
+  font-size: 24rpx;
+}
 .container .van-button {
   display: block;
-  height: 70rpx;
-  line-height: 66rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 80rpx;
+  margin-top: 30rpx;
 }
 .container .van-button--primary {
-  background-color: #f29e2e;
-  border-color: #f29e2e;
+  background-color: #fa595e;
+  border-color: #fa595e;
+}
+.container .van-button--plain.van-button--primary {
+  color: #fa595e;
+  background: #fff;
 }
 .container .van-button--default {
-  color: #f29e2e;
-  border-color: #f29e2e;
+  color: #fff;
+  background-color: #bfbfbf;
 }
 
 button::after {
   border: none;
 }
+
+/* step */
+.container .van-steps--horizontal {
+  padding: 30rpx 0;
+}
+.container .van-step--finish {
+  color: #fa595e;
+}
+/* cell */
+.container .van-cell {
+  padding: 20rpx 0;
+  line-height: 80rpx;
+  background-color: transparent;
+}
+/* input */
+.container .van-field__body {
+  position: relative;
+}
+.container input ,
+.container .van-field__input {
+  border: 1px solid #bdc5cb;
+  height: 80rpx;
+  border-radius:80rpx; 
+  padding-left: 40rpx;
+  background-color: #fafafa;
+}
+/* .container .van-field__clear-root {
+  position: absolute;
+  right: 20rpx;
+  top: 0;
+  z-index: 10;
+} */
 
 /* 中间内容 */
 .main {
