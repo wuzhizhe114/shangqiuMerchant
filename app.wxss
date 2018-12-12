@@ -1,15 +1,15 @@
 /**app.wxss**/
 
 /* 字体图标 */
-@import "style/iconfont.wxss";
+@import "style/iconfont/iconfont.wxss";
 
 view, text, icon, input {
   box-sizing: border-box;
 }
 
 image {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 
 page {
@@ -18,42 +18,13 @@ page {
 
 .container {
   height: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  box-sizing: border-box; */
   font-size: 28rpx;
 }
 
-/* 点击态 */
-
-.hover-active::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.15) !important;
-}
-
-.block-active::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.05) !important;
-}
-
-/* 隐藏滚动条 */
-
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-  color: transparent;
-}
-
+/* 重写 vant-weapp 样式 */
 /* button */
 .container .van-button--normal {
   padding: 0 20rpx;
@@ -94,34 +65,27 @@ button::after {
   color: #fa595e;
 }
 /* cell */
-.container .van-cell {
+/* .container .van-cell {
   padding: 20rpx 0;
   line-height: 80rpx;
   background-color: transparent;
-}
+} */
 /* input */
-.container .van-field__body {
+/* .container .van-field__body {
   position: relative;
-}
-.container input ,
+} */
+/* .container input ,
 .container .van-field__input {
   border: 1px solid #bdc5cb;
   height: 80rpx;
   border-radius:80rpx; 
   padding-left: 40rpx;
   background-color: #fafafa;
-}
-/* .container .van-field__clear-root {
-  position: absolute;
-  right: 20rpx;
-  top: 0;
-  z-index: 10;
 } */
-
-/* 中间内容 */
-.main {
+/* 弹性盒子 中间内容 */
+/* .container .main {
   overflow-y: scroll;
-}
+} */
 
 /* 底部提示 */
 .page-end {
@@ -131,20 +95,7 @@ button::after {
   height: 0;
   border-bottom: 1px solid #ddd;
 }
-/* 底部提示
-<view class='page-end pd-30 color-gray d-fl al-center'>
-  <text class='line fl-1'></text>
-  <text class='mlr-10'>我是有底线的</text>
-  <text class='line fl-1'></text>
-</view> */
 
-/* 底部返回按钮 
-<view class='page-back-btn bg-white pd-30'>
-  <navigator open-type='navigateBack'>
-    <van-button type='primary'>返回</van-button>
-  </navigator>
-</view> */
-
-
+@import "style/style.wxss";
 /* 快捷工具样式 */
 @import "style/tool.wxss";

@@ -1,0 +1,139 @@
+<!--pages/enterReview/enterReview.wxml-->
+<view class='container enter-review d-fl fl-col'>
+  <view class='header d-fl al-center jc-center theme-bg'>
+    <view class='step-box d-fl color-white'>
+      <view class='step-01 d-fl fl-col al-center'>
+        <text class='round-count on mb-10'>1</text>
+        <text>提交资料</text>
+      </view>
+      <view class='line d-fl'>
+        <text class='dashed fl-1 {{showStep === "2" ? "on" : ""}} {{showStep === "3" ? "on after" : ""}}'></text>
+        <text class='dashed fl-1 {{showStep === "3" ? "on" : ""}}'></text>
+      </view>
+      <view class='step-02 d-fl fl-col al-center'>
+        <text class='round-count mb-10 {{showStep === "3" ? "on" : ""}}'>2</text>
+        <text>合同审核</text>
+      </view>
+    </view>
+  </view>
+  <view class='main fl-1'>
+    <view class='step01' hidden='{{showStep != "1"}}'>
+      <view class='review-item'>
+        <view class='item-title d-fl al-center mb-45'>
+          <text class='iconfont icon-shangdian theme-color mr-10 mt-6'></text>
+          <text>主体信息</text>
+        </view>
+        <view class='item-con'>
+          <view class='input-box-line'>
+            <text class='iconfont icon-jigou theme-color fs-36'></text>
+            <input class='input' placeholder-class='ph-color' type='text' placeholder='请输入机构名称'></input>
+            <!-- <text class='iconfont icon-close1 fs-36 color-gray'></text> -->
+          </view>
+          <view class='input-box-line'>
+            <text class='iconfont icon-xinyong theme-color fs-36'></text>
+            <input class='input' placeholder-class='ph-color' type='text' placeholder='请输入统一社会信用代码'></input>
+          </view>
+          <view class='input-box-line'>
+            <text class='iconfont icon-faren theme-color fs-36'></text>
+            <input class='input' placeholder-class='ph-color' type='text' placeholder='请输入法定代表人姓名'></input>
+          </view>
+          <view class='input-box-line'>
+            <text class='iconfont icon-credentials_icon theme-color fs-28'></text>
+            <input class='input shenfen' placeholder-class='ph-color' type='text' placeholder='请输入身份证号码'></input>
+          </view>
+        </view>
+      </view>
+      <view class='review-item'>
+        <view class='item-title d-fl al-center mb-35'>
+          <text class='iconfont icon-yingyezhizhao theme-color mr-10 mt-6'></text>
+          <text>营业执照</text>
+        </view>
+        <view class='item-con d-fl mb-35'>
+          <view class='upload-img d-fl fl-col jc-center al-center gray-border pr' hover-class='block-active'>
+            <text class='iconfont icon-camera'></text>
+            <text>营业执照</text>
+            <image class='temp-pic' src='' hidden='{{true}}'></image>
+          </view>
+        </view>
+      </view>
+      <view class='review-item'>
+        <view class='item-title d-fl al-center mb-35'>
+          <text class='iconfont icon-license theme-color mr-10 fs-36'></text>
+          <text>店铺名称</text>
+        </view>
+        <view class='item-con'>
+          <view class='select-box d-fl gray-border pr mb-35' hover-class='block-active' id="dianpuName" data-action-name="店铺名称依据" catchtap='showActionList'>
+            <text class='fl-1 fs-24 text-center'>{{submitData.dianpuNameId}}</text>
+            <text class='iconfont icon-sanjiaoxing'></text>
+          </view>
+          <view class='input-box-line'>
+            <!-- <text class='iconfont icon-jigou theme-color fs-36'></text> -->
+            <input class='input dianpu-name' placeholder-class='ph-color' type='text' placeholder='请输入店铺名称（15字以内）'></input>
+            <!-- <text class='iconfont icon-close1 fs-36 color-gray'></text> -->
+          </view>
+        </view>
+      </view>
+      <view class='review-item mb-60'>
+        <view class='item-title d-fl al-center mb-35'>
+          <text class='iconfont icon-leixing theme-color mr-10 mt-6'></text>
+          <text>营业类别</text>
+        </view>
+        <view class='item-con'>
+          <view class='select-box d-fl gray-border pr mb-35' hover-class='block-active' data-action-name="请选择营业类别" catchtap='showActionList'>
+            <text class='fl-1 fs-24 text-center'>{{submitData.yingyeCate}}</text>
+            <text class='iconfont icon-sanjiaoxing'></text>
+          </view>
+          <view class='upload-img d-fl fl-col jc-center al-center gray-border pr mb-20' hover-class='block-active'>
+            <text class='iconfont icon-camera'></text>
+            <text>食品流通许可证</text>
+            <image class='temp-pic' src='' hidden='{{true}}'></image>
+          </view>
+          <view class='upload-img d-fl fl-col jc-center al-center gray-border pr' hover-class='block-active'>
+            <text class='iconfont icon-camera'></text>
+            <text>食品安全许可证</text>
+            <image class='temp-pic' src='' hidden='{{true}}'></image>
+          </view>
+        </view>
+      </view>
+      <view class='btn-box'>
+        <van-button block="{{true}}" type="primary" data-step="2" catchtap='changeShowStep'>提交审核</van-button>
+      </view>
+    </view>
+    <view class='step02' hidden='{{showStep != "2"}}'>
+      <view class='text-center mb-20'>
+        <image src='{{picHost}}loginRegist/shenhe.png' class='tips-pic'></image>
+      </view>
+      <view class='mb-45 fs-30'>
+        <text>提交成功，请耐心等待市场人员审核</text>
+      </view>
+      <view class='fs-24 color-gray mb-35'>
+        <text>预计将在1-3个工作日内审核完成，审核结果将会以短信形式发送至您注册的手机号</text>
+      </view>
+      <view class='fs-24'>
+        <text>市场联系方式：</text>
+        <text class='theme-color'>07558623758</text>
+      </view>
+    </view>
+    <view class='step03' hidden='{{showStep != "3"}}'>
+      <view class='cont mb-120'>
+        <view class='text-center mb-35'>
+          <text class='iconfont icon-chenggong theme-color'></text>
+        </view>
+        <view class='mb-45 fs-30'>
+          <text>审核成功，请签署商户入驻电子合同</text>
+        </view>
+        <view class='fs-24 color-gray mb-35'>
+          <text>请核对合同条款及内容并完成签署，若合同内容有误，可联系市场人员进行修改 </text>
+        </view>
+        <view class='fs-24'>
+          <text>市场联系方式：</text>
+          <text class='theme-color'>07558623758</text>
+        </view>
+      </view>
+      <view class='btn-box'>
+        <van-button block="{{true}}" type="primary">签署合同</van-button>      
+      </view>
+    </view>
+  </view>
+  <van-action-sheet show="{{ showAction }}" actions="{{ actionsList }}" title="{{actionTitle}}" bind:select="actionSelect" bind:close="closeActionSheet" />
+</view>

@@ -1,0 +1,67 @@
+/* 点击态 */
+
+.hover-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.block-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 隐藏滚动条 */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* 单行文本头部 */
+
+.container .header-top {
+  height: 280rpx;
+}
+
+/* 左右两边有按钮 只有下边框的输入框 */
+
+.input-box-line {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #b2b2b2;
+  padding: 0 10rpx;
+  margin-bottom: 28rpx;
+}
+
+.input-box-line .input {
+  flex: 1;
+  padding-left: 32rpx;
+  height: 56rpx;
+}
+
+/* .input-box-line .van-button {
+  height: 56rpx;
+  line-height: 56rpx;
+  border-radius: 56rpx;
+  margin: 0 -10rpx 4rpx 0;
+  font-size: 22rpx;
+} */
+
+.container .mini .van-button  {
+  height: 56rpx;
+  line-height: 56rpx;
+  border-radius: 56rpx;
+  margin: 0 -10rpx 4rpx 0;
+  font-size: 22rpx;
+}

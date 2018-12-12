@@ -1,2 +1,6 @@
 <!--pages/credit/credit.wxml-->
-<text>pages/credit/credit.wxml</text>
+<view class='container'>
+  <view class='letdatu'>
+    <ec-canvas id="mychart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

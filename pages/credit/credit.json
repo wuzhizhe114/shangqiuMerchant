@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarTitleText": "店铺信用",
+  "usingComponents": {
+    "ec-canvas": "../../component/ec-canvas/ec-canvas"
+  }
+}

@@ -32,8 +32,11 @@ App({
         }
       }
     })
+
+
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    picHost: 'https://clueless.gitee.io/shangqiuimages/merchant/'
   }
 })

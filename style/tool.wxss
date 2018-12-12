@@ -47,9 +47,14 @@
 .color-white {
   color: #fff;
 }
+/* 灰色 */
 .color-gray {
   color: #a6abaf;
 }
+.color-666 {
+  color: #585858;
+}
+/* 蓝色 */
 .color-blue {
   color: #358ef2;
 }
@@ -190,8 +195,15 @@
   margin-left: 20rpx;
 }
 
+.mt-6 {
+  margin-top: 6rpx;
+}
+
 .mb-60 {
   margin-bottom: 60rpx;
+}
+.mb-120 {
+  margin-bottom: 120rpx;
 }
 
 .mb-45 {

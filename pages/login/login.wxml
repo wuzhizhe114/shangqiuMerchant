@@ -1,83 +1,26 @@
 <!--pages/login/login.wxml-->
 <view class='container'>
-  <view class='header theme-bg lh-90 d-fl jc-space-b color-white pd-lr-30 fs-32'>
-    <view>
-      <text class='iconfont icon-close1 fs-36'></text>
-    </view>
-    <navigator hover-class='none' url='/pages/regist/regist'>注册</navigator>
+  <view class='header-top d-fl al-center jc-center theme-bg color-white fs-36'>
+    <text>已注册商户登录</text>
   </view>
-  <view class='main fl-1 login-box pd-lr-30'>
-    <view class='text-center mt-b20 fs-46 mb-60'>商户端</view>
-    <!-- 使用验证码登录 -->
-    <view class='use-phone' hidden='{{loginStepOn === "2"}}'>
-      <view class='mb-35'>使用手机验证码登录</view>
-      <view class='step1' hidden='{{!(loginStepOn === "0")}}'>
-        <view class='pr mb-45'>
-          <input class='bg-gray2 color-white input-phone' placeholder='请输入手机号' placeholder-class='color-white'></input>
-          <view class='input-left' hover-class='block-active'>+86
-            <text class='iconfont icon-sanjiaoxing'></text>
-          </view>
-        </view>
-        <view class='mb-60'>
-          <van-button type='primary' data-step="1" bindtap='changeStepOn'>下一步</van-button>
-        </view>
-      </view>
-      <view class='step2' hidden='{{!(loginStepOn === "1")}}'>
-        <view class='code-box pr mb-45'>
-          <input placeholder='请输入验证码' class='text-center' placeholder-class='ph-color'></input>
-          <view class='count-down text-center br-half color-white'>60s</view>
-        </view>
-        <view class='mb-60'>
-          <van-button type='primary'>确认</van-button>
-        </view>
-        <view class='text-center'>
-          <text class='theme-color'>收不到验证码？</text>
-          <view class='pd-tb-26'>试试</view>
-        </view>
-      </view>
+  <view class='form'>
+    <view class='input-box-line'>
+      <text class='iconfont icon-guanjiaowangtubiao01 theme-color fs-36'></text>
+      <input class='input' placeholder-class='ph-color' type='number' placeholder='请输入手机号'></input>
+      <text class='iconfont icon-close1 fs-36 color-gray'></text>
     </view>
-    <view class='use-zhanghu' hidden='{{!(loginStepOn === "2")}}'>
-      <view class='mb-35'>使用账号密码登录</view>
-      <view class='mb-35'>
-        <input placeholder='请输入账号' placeholder-class='ph-color'></input>
-      </view>
-      <view class='mb-45'>
-        <input placeholder='请输入密码' placeholder-class='ph-color'></input>
-      </view>
-      <view class='mb-20'>
-        <van-button type='primary'>登录</van-button>
-      </view>
-       <view class='text-center'>
-          <text class='theme-color'>忘记密码？</text>
-          <view class='pd-tb-26'>试试</view>
-        </view>
+    <view class='input-box-line'>
+      <text class='iconfont icon-mima1 theme-color fs-36'></text>
+      <input class='input' placeholder-class='ph-color' type='password' placeholder='请输入密码'></input>
+      <text class='iconfont icon-yanjing1 fs-36 color-gray'></text>
     </view>
-    <view class='text-center'>
-      <text class='color-blue' bindtap='showOtherLogin'>使用其他方式登录</text>
-    </view>
-    <view class='mt-126 fs-24 text-center'>
-      <text>登录代表你已同意</text>
-      <text class='theme-color'>《商丘市商户小程序用户协议》</text>
+    <view class='text-right'>
+      <navigator hover-class='none' url='' class='theme-color fs-24'>忘记密码</navigator>
     </view>
   </view>
-  <van-action-sheet show="{{ otherLogin }}" bind:close="otherLoginClose" title="其他登录方式">
-    <view class='other-login bg-white d-fl'>
-      <view class='text-center fl-1' bindtap='otherLoginClose'>
-        <text class='iconfont icon-weixincopy fs-80 weixin-green'></text>
-        <view>微信</view>
-      </view>
-      <view class='text-center fl-1' bindtap='otherLoginClose'>
-        <text class='iconfont icon-qq fs-80 color-blue'></text>
-        <view>QQ</view>
-      </view>
-      <view class='text-center fl-1' bindtap='otherLoginClose'>
-        <text class='iconfont icon-weibo fs-80 weibo-red'></text>
-        <view>微博</view>
-      </view>
-      <view class='text-center fl-1' data-step="{{loginStepOn === '2' ? '0' : '2'}}" bindtap='changeStepOn'>
-        <text class='iconfont icon-mima fs-80 user-pink'></text>
-        <view>{{loginStepOn === '2' ? '验证码' : '账号'}}</view>
-      </view>
-    </view>
-  </van-action-sheet>
+  <view class='btn-box pd-lr-30'>
+    <navigator url='/pages/credit/credit' open-type='switchTab' hover-class='none'>
+      <van-button block="{{true}}" type="primary">登录</van-button>
+    </navigator>
+  </view>
 </view>

@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "注册",
+  "navigationBarTitleText": "雪苑农贸市场",
   "usingComponents": {
     "van-steps": "vant-weapp/steps/index",
     "van-field": "vant-weapp/field/index",

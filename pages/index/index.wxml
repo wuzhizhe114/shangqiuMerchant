@@ -1,3 +1,21 @@
 <!--index.wxml-->
-<view class="container">
+<view class="container d-fl fl-col">
+  <view class='fl-1 d-fl al-center jc-center'>
+    <view class='text-center'>
+      <view class='fs-58 mb-20 pr color-666'>雪苑农贸市场
+        <text class='index-tips fs-24 color-white'>商户</text>
+      </view>
+      <view>智慧城市诚信服务平台</view>
+    </view>
+  </view>
+  <view class='fl-1 d-fl al-center'>
+    <view class='btn-box pd-lr-30'>
+      <navigator url='/pages/login/login' hover-class='none'>
+        <van-button block="{{true}}" plain type="primary">登录</van-button>
+      </navigator>
+      <navigator url='/pages/regist/regist' hover-class='none'>
+        <van-button block="{{true}}" type="primary">新用户注册</van-button>
+      </navigator>
+    </view>
+  </view>
 </view>

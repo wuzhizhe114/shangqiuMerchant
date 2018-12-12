@@ -1,0 +1,115 @@
+/* pages/enterReview/enterReview.wxss */
+/* 数字圆 */
+.round-count {
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  line-height: 42rpx;
+  text-align: center;
+}
+.round-count.on {
+  color: #fa595e;
+  background-color: #fff;
+}
+
+/* 虚线 */
+.line {
+  width: 146rpx;
+  height: 24rpx;
+}
+.line .dashed {
+  border-bottom: 1px dashed #fff;
+}
+.line .dashed.on {
+  border-bottom-style: solid;
+  position: relative;
+}
+.line .dashed:first-child.on::before {
+  content: '';
+  position: absolute;
+  bottom: -6rpx;
+  right: -6rpx;
+  width: 12rpx;
+  height: 12rpx;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.line .dashed:first-child.on::after {
+  content: '审核中';
+  position: absolute;
+  bottom: -40rpx;
+  right: -34rpx;
+  font-size: 22rpx;
+}
+.line .dashed:first-child.after::before,
+.line .dashed:first-child.after::after {
+  display: none
+}
+
+/* 上传图片框 样式 */
+.upload-img {
+  width: 276rpx;
+  height: 190rpx;
+  /* padding: 22rpx 76rpx; */
+  background-color: #fafafa;
+  border-radius: 3px;
+  color: #d5d5d5;
+  font-size: 22rpx;
+}
+.upload-img .iconfont {
+  font-size: 106rpx;
+}
+.upload-img .temp-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* 下拉选择框 */
+.select-box {
+  /* width: 300rpx; */
+  padding: 10rpx;
+  background-color: #fafafa;
+  border-radius: 3px;
+}
+
+/* 头部 */
+.enter-review .header {
+  padding: 44rpx 0;
+}
+
+/* 主体内容 */
+.main {
+  padding: 80rpx 30rpx 70rpx;
+  overflow-y: scroll;
+}
+
+.main .review-item {
+  padding: 0 60rpx;
+}
+.main .review-item .item-con {
+  padding: 0 44rpx;
+}
+.main .review-item .input.shenfen {
+  padding-left: 24rpx;
+}
+.main .review-item .input.dianpu-name {
+  padding-left: 0;
+}
+
+.step02,
+.step03 .cont {
+  padding: 0 100rpx;
+}
+.step02 .tips-pic {
+  width: 274rpx;
+  height: 164rpx;
+}
+
+.step03 .cont .icon-chenggong {
+  font-size: 122rpx;
+}

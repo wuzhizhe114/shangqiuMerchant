@@ -1,1 +1,4 @@
 /* pages/credit/credit.wxss */
+.letdatu {
+  height: 500rpx;
+}

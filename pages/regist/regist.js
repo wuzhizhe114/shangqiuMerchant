@@ -21,7 +21,8 @@ Page({
         text: '第三步',
         desc: '设置密码'
       }
-    ]
+    ],
+    passwordShow: false,
   },
   stepGo(e){
     console.log(e)
@@ -37,6 +38,12 @@ Page({
         backgroundColor: '#f29e2e'
       });
     }
+  },
+  // 密码显示隐藏
+  changePasswordStatus(){
+    this.setData({
+      passwordShow: !this.data.passwordShow
+    })
   },
 
   /**

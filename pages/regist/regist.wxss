@@ -1,11 +1,5 @@
 /* pages/regist/regist.wxss */
-.regist-box {
-  width: 100%;
-}
-
-.success-box .icon-chenggong {
-  font-size: 182rpx;
-}
-.success-box .tips {
-  padding: 70rpx;
+.form {
+  padding: 100rpx;
+  margin-bottom: 80rpx;
 }

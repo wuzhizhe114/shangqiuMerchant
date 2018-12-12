@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "雪苑农贸市场",
+  "navigationBarTitleText": "入驻审核",
   "usingComponents": {
     "van-field": "vant-weapp/field/index",
     "van-button": "vant-weapp/button/index",
