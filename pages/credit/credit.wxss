@@ -1,4 +1,34 @@
 /* pages/credit/credit.wxss */
+
+.container {
+  height: auto;
+}
+
+.header {
+  padding: 50rpx 30rpx;
+}
+.header .dianpu-pic {
+  width: 120rpx;
+  height: 100rpx;
+  border: 2px solid #fff0f0;
+}
+/* background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
 .letdatu {
-  height: 500rpx;
+  background: #fff url('https://clueless.gitee.io/shangqiuimages/merchant/credit/leida-bg.png') center 100%/100% no-repeat;
+}
+.letdatu .leida-echart {
+  height: 280rpx;
+}
+
+.pinglun .pinglun-list .user-pic {
+  width: 90rpx;
+  height: 90rpx;
+}
+.pinglun .pinglun-list .pinglun-pic {
+  width: 90rpx;
+  height: 60rpx;
+}
+.tongzhi .xiaoxi-list .list-item:last-child,
+.pinglun .pinglun-list .list-item:last-child {
+  border-bottom: none;
 }

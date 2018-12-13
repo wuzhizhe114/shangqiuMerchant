@@ -65,3 +65,22 @@
   margin: 0 -10rpx 4rpx 0;
   font-size: 22rpx;
 }
+
+/* 旋转 90度 */
+.rotate-ne-90 {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -moz-transform: rotate(-90deg); /* Firefox */
+  -webkit-transform: rotate(-90deg); /* Safari 和 Chrome */
+  -o-transform: rotate(-90deg);
+}
+
+/* 小红点 */
+.red-point {
+  /* display: inline-block; */
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #e94d4d;
+  border-radius: 50%;
+  vertical-align: middle;
+}

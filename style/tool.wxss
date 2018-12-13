@@ -24,6 +24,15 @@
 .gray-b-b {
   border-bottom: 1px solid #bdc5cb;
 }
+.gray-b-b2 {
+  border-bottom: 1px solid #e5e5e5;
+}
+.gray-b-r {
+  border-right: 1px solid #cdcdcd;
+}
+.dash-gray-b {
+  border-bottom: 1px dashed #bdc5cb;
+}
 
 /* placeholder 字体颜色 */
 .ph-color {
@@ -37,10 +46,10 @@
 }
 /* 灰色背景 */
 .bg-gray {
-  background: #f2f2f2;
+  background: #efefef;
 }
 .bg-gray2 {
-  background: #a2a8af !important;
+  background: #a2a8af;
 }
 
 /* 白色字体 */
@@ -51,12 +60,30 @@
 .color-gray {
   color: #a6abaf;
 }
+.color-gray2 {
+  color: #ecc2c2;
+}
 .color-666 {
   color: #585858;
 }
 /* 蓝色 */
 .color-blue {
   color: #358ef2;
+}
+.weixin-green {
+  color: #58bc47;
+}
+.weibo-red {
+  color: #d81e06;
+}
+.user-pink {
+  color: #fa595e;
+}
+.color-star {
+  color: #f2cb2e;
+}
+.color-jiuhong {
+  color: #a90005;
 }
 
 
@@ -101,6 +128,14 @@
 /* 10号 字体 */
 .fs-20 {
   font-size: 20rpx;
+}
+
+/* 字体样式 */
+.fs-italic {
+  font-style: italic;
+}
+.fw-bold {
+  font-weight: bold;
 }
 
 
@@ -260,7 +295,7 @@
 /* 盒子阴影 */
 
 .box-sh {
-  box-shadow: 0px 0.3px 0.1px 0 #acacac;
+  box-shadow: 0.3px 0px 3px 0.3px #dddddd;
 }
 
 .box-sh-all {
@@ -332,12 +367,10 @@
   align-self: center;
 }
 
-.weixin-green {
-  color: #58bc47;
+/* 浮动 */
+.fl-l {
+  float: left;
 }
-.weibo-red {
-  color: #d81e06;
-}
-.user-pink {
-  color: #fa595e;
+.fl-r {
+  float: right;
 }

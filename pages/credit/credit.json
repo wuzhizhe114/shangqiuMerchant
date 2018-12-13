@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "店铺信用",
   "usingComponents": {
-    "ec-canvas": "../../component/ec-canvas/ec-canvas"
+    "ec-canvas": "../../component/ec-canvas/ec-canvas",
+    "van-notice-bar": "vant-weapp/notice-bar/index"
   }
 }

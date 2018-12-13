@@ -1,6 +1,152 @@
 <!--pages/credit/credit.wxml-->
-<view class='container'>
-  <view class='letdatu'>
-    <ec-canvas id="mychart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+<view class='container bg-gray'>
+  <view class='header theme-bg color-white'>
+    <view class='d-fl mb-35'>
+      <image src='{{picHost}}demo/qiandama.png' class='dianpu-pic'></image>
+      <view class='fl-1 ml-24'>
+        <view class='text-cell fs-32 mb-20 fw-bold'>
+          <text>钱妈妈</text>
+        </view>
+        <view>
+          <text>信用等级：</text>
+          <text class='color-star'>
+            <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-xingxingxianmiao'></text>
+          </text>
+        </view>
+      </view>
+      <navigator class='d-fl fl-col pr' hover-class='block-active' url=''>
+        <view class='text-center color-jiuhong fw-bold'>
+          <text class='fs-42 fs-italic mr-10'>3</text>
+          <text class='iconfont icon-tubiaoshangshengqushi fs-42'></text>
+        </view>
+        <text>当前排名</text>
+      </navigator>
+    </view>
+    <view class='d-fl text-center jc-space-b'>
+      <view>
+        <view class='fs-42 fs-italic fw-bold'>12</view>
+        <text class='color-gray2'>已发布商品</text>
+      </view>
+      <view>
+        <view class='fs-42 fs-italic fw-bold'>90%</view>
+        <text class='color-gray2'>用户好评率</text>
+      </view>
+      <view>
+        <view class='fs-42 fs-italic fw-bold'>1</view>
+        <text class='color-gray2'>客户投诉</text>
+      </view>
+    </view>
+  </view>
+  <view class='letdatu pd-lr-30 of-hidden box-sh mb-20'>
+    <view class='lh-90 clearfix fs-32'>
+      <text class='fl-l theme-color'>店铺信用诊断</text>
+      <text class='fl-r color-666'>当前信用分：<text class='theme-color fs-42 fs-italic fw-bold mr-10'>98</text> </text>
+    </view>
+    <view class='leida-echart mb-35'>
+      <ec-canvas id="mychart" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+    </view>
+  </view>
+  <view class='tongzhi pd-lr-30 bg-white box-sh mb-60'>
+    <view class='lh-90 clearfix fs-32 gray-b-b'>
+      <text class='fl-l theme-color'>通知公告</text>
+      <navigator class='fl-r color-gray fs-24' hover-class='none' url=''>更多</navigator>
+    </view>
+    <view class='xiaoxi-list'>
+      <navigator class='list-item pd-tb-26 dash-gray-b' hover-class='none' url=''>
+        <view class='d-fl mb-10'>
+          <text class='iconfont icon-laba theme-color mr-10'></text>
+          <view class='fl-1 text-ell'>
+            <text>关于提升雪苑农贸市场整体卫生情况要注意以下几点完成时候的</text>
+          </view>
+        </view>
+        <view class='clearfix pl-40 fs-22 color-gray'>
+          <text class='fl-l'>发布:市场办公室</text>
+          <text class='fl-r'>2018.12.04 12:23:10</text>
+        </view>
+      </navigator>
+      <navigator class='list-item pd-tb-26 dash-gray-b' hover-class='none' url=''>
+        <view class='d-fl mb-10'>
+          <text class='iconfont icon-laba theme-color mr-10'></text>
+          <view class='fl-1 text-ell'>
+            <text>关于提升雪苑农贸市场整体卫生情况要注意以下几点完成时候的</text>
+          </view>
+        </view>
+        <view class='clearfix pl-40 fs-22 color-gray'>
+          <text class='fl-l'>发布:市场办公室</text>
+          <text class='fl-r'>2018.12.04 12:23:10</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class='pinglun bg-white pd-lr-30 box-sh mb-60'>
+    <view class='lh-90 clearfix fs-32 gray-b-b'>
+      <text class='fl-l theme-color'>店铺评论</text>
+      <navigator class='fl-r color-gray fs-24' hover-class='none' url=''>更多</navigator>
+    </view>
+    <view class='pinglun-list'>
+      <navigator hover-class='none' url='' class='list-item pd-tb-26 dash-gray-b'>
+        <view class='d-fl mb-10'>
+          <image class='user-pic mr-10' src='{{picHost}}demo/third_pic.png'></image>
+          <view class='fl-1'>
+            <view class='d-fl mb-10'>
+              <view class='fl-1 text-ell fs-32'>
+                <text>某某用户</text>
+              </view>
+              <view class='color-star'>
+                <text class='iconfont icon-stars'></text>
+                <text class='iconfont icon-stars'></text>
+                <text class='iconfont icon-stars'></text>
+                <text class='iconfont icon-stars'></text>
+                <text class='iconfont icon-xingxingxianmiao'></text>
+              </view>
+            </view>
+            <view class='clearfix fs-22 color-666'>
+              <text class='fl-l'>2017-03-25</text>
+              <text class='fl-r'>好评</text>
+            </view>
+          </view>
+        </view>
+        <view class='color-666 mb-10 text-ell'>
+          <text>服务态度差，缺斤少两</text>
+        </view>
+        <view>
+          <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
+          <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
+          <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
+        </view>
+      </navigator>
+      <navigator hover-class='none' url='' class='list-item pd-tb-26 dash-gray-b'>
+        <view class='d-fl mb-10'>
+          <image class='user-pic mr-10' src='{{picHost}}demo/third_pic.png'></image>
+          <view class='fl-1'>
+            <view class='d-fl mb-10'>
+              <view class='fl-1 text-ell fs-32'>
+                <text>某某用户</text>
+              </view>
+              <view class='color-star'>
+                <text class='iconfont icon-stars'></text>
+                <text class='iconfont icon-stars'></text>
+                <text class='iconfont icon-stars'></text>
+                <text class='iconfont icon-stars'></text>
+                <text class='iconfont icon-xingxingxianmiao'></text>
+              </view>
+            </view>
+            <view class='clearfix fs-22 color-666'>
+              <text class='fl-l'>2017-03-25</text>
+              <text class='fl-r'>好评</text>
+            </view>
+          </view>
+        </view>
+        <view class='color-666 mb-10 text-ell'>
+          <text>服务态度差，缺斤少两</text>
+        </view>
+        <view>
+        </view>
+      </navigator>
+    </view>
   </view>
 </view>

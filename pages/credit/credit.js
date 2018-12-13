@@ -32,16 +32,7 @@ Page({
       Chart.setOption({
         radar: {
           name: {
-            formatter: function(value, indicator) {
-              value = String(value);
-              if (value.length > 4) {
-                indicator.nameTextStyle.fontSize = 14;
-                return value.substring(0, 4) + '\n' + value.substring(4, value.length)
-              } else {
-                indicator.nameTextStyle.fontSize = 12;
-                return value
-              }
-            },
+            formatter: '{value}'
           },
           indicator: [{
             name: '合规经营',
@@ -59,8 +50,8 @@ Page({
             name: '网络安全',
             max: 100,
           }, ],
-          radius: 60,
-          center: ['50%', '60%']
+          radius: 40,
+          center: ['50%', '55%']
         },
         grid: {
           x: 0,
@@ -71,7 +62,7 @@ Page({
         series: [{
           areaStyle: {
             normal: {
-              opacity: 0.6,
+              opacity: 0.5,
             }
           },
           itemStyle: {
@@ -81,7 +72,7 @@ Page({
                 borderColor: '#fc20ff',
               },
               color: '#04c9b3',
-              borderWidth: '2',
+              borderWidth: '1',
               borderColor: '#04c9b3'
             },
           },
@@ -89,6 +80,17 @@ Page({
           data: [{
             value: [80, 90, 60, 90, 70],
             name: '指标评分',
+            // 拐点显示数值
+            // label: {
+            //   normal: {
+            //     show: true,
+            //     formatter: function(params) {
+            //       return params.value;
+            //     },
+            //     position:'inside',
+            //     color: '#fa595e'
+            //   }
+            // }
           }],
         }],
         textStyle: {

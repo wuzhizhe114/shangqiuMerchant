@@ -1,2 +1,93 @@
 <!--pages/person/person.wxml-->
-<text>pages/person/person.wxml</text>
+<view class='container person bg-gray'>
+  <view class='header'>
+    <view class='d-fl mb-35'>
+      <image class='person-pic' src='{{picHost}}person/user-icon.png'></image>
+      <view class='fl-1 ml-24 fs-42 lh-90 color-white'>
+        <text>卡卡</text>
+      </view>
+      <image class='erweima-pic' src='{{picHost}}person/erweima.png' bindtap='showErweimaPopup'></image>
+    </view>
+    <view class='d-fl jc-space-b text-center color-white'>
+      <view class='fl-1 gray-b-r'>
+        <text>365</text>
+        <view>收到评论</view>
+      </view>
+      <view class='fl-1 gray-b-r'>
+        <text>365</text>
+        <view>关注我的</view>
+      </view>
+      <view class='fl-1'>
+        <text>365</text>
+        <view>7天访客</view>
+      </view>
+    </view>
+  </view>
+  <view class='xiaoxi mb-20 pd-lr-30 bg-white box-sh'>
+    <navigator class='item pd-tb-26 d-fl al-center gray-b-b2' hover-class='none' url=''>
+      <text class='iconfont icon-jianyi1 mr-10 mt-6 color-blue'></text>
+      <text>消息通知</text>
+      <view class='tips fl-1 fs-22 color-gray text-right mr-10 d-fl jc-end al-center'>
+        <text class='mr-10'>您有5条新消息</text><text class='red-point'></text>
+      </view>
+      <text class='iconfont icon-xiangxia rotate-ne-90 fs-42'></text>
+    </navigator>
+    <navigator class='item pd-tb-26 d-fl al-center' hover-class='none' url=''>
+      <text class='iconfont icon-dangan mr-10 mt-6 color-star'></text>
+      <text>信用档案</text>
+      <view class='tips fl-1 fs-22 color-gray text-right mr-10 d-fl jc-end al-center'>
+        <!-- <text class='mr-10'>您有5条新消息</text><text class='red-point'></text> -->
+      </view>
+      <text class='iconfont icon-xiangxia rotate-ne-90 fs-42'></text>
+    </navigator>
+  </view>
+  <view class='other fl-1 pd-lr-30 bg-white'>
+    <navigator class='item pd-tb-26 d-fl al-center gray-b-b2' hover-class='none' url=''>
+      <text class='iconfont icon-neirongyingxiangli mr-10 mt-6 theme-color'></text>
+      <text>我的资料</text>
+      <view class='tips fl-1 fs-22 color-gray text-right mr-10 d-fl jc-end al-center'>
+        <!-- <text class='mr-10'>您有5条新消息</text><text class='red-point'></text> -->
+      </view>
+      <text class='iconfont icon-xiangxia rotate-ne-90 fs-42'></text>
+    </navigator>
+    <navigator class='item pd-tb-26 d-fl al-center gray-b-b2' hover-class='none' url=''>
+      <text class='iconfont icon-dianzihetong mr-10 mt-6 weixin-green'></text>
+      <text>电子合同</text>
+      <view class='tips fl-1 fs-22 color-gray text-right mr-10 d-fl jc-end al-center'>
+        <text class='mr-10'>2个商品</text><text class='red-point'></text>
+      </view>
+      <text class='iconfont icon-xiangxia rotate-ne-90 fs-42'></text>
+    </navigator>
+    <navigator class='item pd-tb-26 d-fl al-center' hover-class='none' url=''>
+      <text class='iconfont icon-xitong mr-10 mt-6 color-666'></text>
+      <text>系统设置</text>
+      <view class='tips fl-1 fs-22 color-gray text-right mr-10 d-fl jc-end al-center'>
+        <!-- <text class='mr-10'>您有5条新消息</text><text class='red-point'></text> -->
+      </view>
+      <text class='iconfont icon-xiangxia rotate-ne-90 fs-42'></text>
+    </navigator>
+  </view>
+
+  <!-- 二维码弹窗 -->
+  <van-popup show="{{ showPopup }}" bind:close="erweimaPopupClose">
+    <view class='erweima-box d-fl'>
+      <!-- <image src='{{picHost}}person/erweima.png'></image> -->
+      <view class='mr-32'>
+        <image class='person-pic' src='{{picHost}}person/user-icon.png'></image>
+      </view>
+      <view class='ml-24 fl-1'>
+        <view class='mb-20'>
+          <text class='fs-36'>何记熟食</text>
+          <text class='iconfont icon-geren2 color-blue ml-24'></text>
+        </view>
+        <view class='fs-24 color-gray mb-20'>
+          <text>河南</text>
+          <text class='ml-24'>商丘</text>
+        </view>
+        <view>
+          <image src='{{picHost}}person/erweima.png' class='erweima-pic'></image>
+        </view>
+      </view>
+    </view>
+  </van-popup>
+</view>

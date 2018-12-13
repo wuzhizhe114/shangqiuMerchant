@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/creditRanking/creditRanking",
     "pages/credit/credit",
+    "pages/person/person",
     "pages/index/index",
     "pages/enterReview/enterReview",
     "pages/regist/regist",
     "pages/login/login",
     "pages/product/product",
-    "pages/person/person",
     "pages/logs/logs"
   ],
   "window": {

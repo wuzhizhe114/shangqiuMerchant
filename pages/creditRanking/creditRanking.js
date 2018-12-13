@@ -1,4 +1,4 @@
-// pages/person/person.js
+// pages/creditRanking/creditRanking.js
 let app = getApp();
 
 Page({
@@ -8,17 +8,6 @@ Page({
    */
   data: {
     picHost: app.globalData.picHost,
-    showPopup: true
-  },
-  showErweimaPopup() {
-    this.setData({
-      showPopup: true,
-    });
-  },
-  erweimaPopupClose() {
-    this.setData({
-      showPopup: false,
-    });
   },
 
   /**

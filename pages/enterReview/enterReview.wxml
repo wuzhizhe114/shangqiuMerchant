@@ -1,5 +1,5 @@
 <!--pages/enterReview/enterReview.wxml-->
-<view class='container enter-review d-fl fl-col'>
+<view class='container enter-review'>
   <view class='header d-fl al-center jc-center theme-bg'>
     <view class='step-box d-fl color-white'>
       <view class='step-01 d-fl fl-col al-center'>

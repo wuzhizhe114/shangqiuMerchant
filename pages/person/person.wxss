@@ -1,1 +1,33 @@
 /* pages/person/person.wxss */
+.person .header {
+  padding: 60rpx 30rpx 26rpx;
+  background: #fff url('https://clueless.gitee.io/shangqiuimages/merchant/person/geren-bg.png') center no-repeat;
+  background-size: 100%;
+}
+.person .header .person-pic,
+.erweima-box .person-pic {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+.person .header .erweima-pic {
+  width: 106rpx;
+  height: 106rpx;
+  border: 3px solid #fff;
+  align-self: center;
+}
+
+/* 二维码弹窗 */
+.erweima-box {
+  width: 550rpx;
+  padding: 30rpx 20rpx 60rpx;
+  background-color: #fff;
+  border-radius: 6px;
+  background: #fff url('https://clueless.gitee.io/shangqiuimages/merchant/person/code_bg.png') center no-repeat;
+  background-size: 100% 100%;
+}
+.erweima-box .erweima-pic {
+  width: 240rpx;
+  height: 240rpx;
+}
