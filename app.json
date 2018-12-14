@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/creditRanking/creditRanking",
     "pages/credit/credit",
-    "pages/person/person",
+    "pages/creditFile/creditFile",
+    "pages/contractSigning/contractSigning",
     "pages/index/index",
+    "pages/creditRanking/creditRanking",
+    "pages/person/person",
     "pages/enterReview/enterReview",
     "pages/regist/regist",
     "pages/login/login",

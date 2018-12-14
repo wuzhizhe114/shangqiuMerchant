@@ -151,6 +151,11 @@
   text-align: right;
 }
 
+/* 缩进 */
+.text-in {
+  text-indent: 2em;
+}
+
 /* 定位 */
 
 .pr {
@@ -183,6 +188,10 @@
   padding: 10rpx 0;
 }
 
+.pd-30 {
+  padding: 30rpx;
+}
+
 .pt-b40 {
   padding-top: 40%;
 }
@@ -206,6 +215,10 @@
 }
 
 /* 外边距 */
+.m-tb-30 {
+  margin: 30rpx 0;
+}
+
 .mt-b30 {
   margin-top: 30%;
 }
@@ -223,6 +236,9 @@
   margin-right: 10rpx;
 }
 
+.ml-40 {
+  margin-left: 40rpx;
+}
 .ml-24 {
   margin-left: 24rpx;
 }
@@ -260,6 +276,9 @@
 .mb-10 {
   margin-bottom: 10rpx;
 }
+.mb-6 {
+  margin-bottom: 6rpx;
+}
 
 .mb-0 {
   margin-bottom: 0rpx;
@@ -284,6 +303,9 @@
 
 .lh-42 {
   line-height: 42rpx;
+}
+.lh-1 {
+  line-height: 1;
 }
 
 /* 盒模型 */
@@ -341,6 +363,9 @@
 
 .al-center {
   align-items: center;
+}
+.al-end {
+  align-items: flex-end;
 }
 
 .jc-center {

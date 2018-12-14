@@ -1,0 +1,40 @@
+<!--pages/contractSigning/contractSigning.wxml-->
+<view class='container'>
+  <view class='contract-desc'>
+    <view class='item lh-42 mb-35'>
+      <view class='lh-90'>第二十条　通知</view>
+      <view class='fs-24 text-in'>
+        <text>本合同规定和与本合同有关的所有联络均应按照收件的一方于本合同确定之地址或传真发出。上述联络如直接交付（包括通过邮件递送公司递交），则在交付时视为收讫；如通过传真发出，则在传真发出即时视为收讫，但必须有收件人随后的书面确认为证；如通过预付邮资的挂号邮件寄出，则寄出七天后视为收讫。</text>
+      </view>
+    </view>
+    <view class='item lh-42 mb-35'>
+      <view class='lh-90'>第二十一条　其他</view>
+      <view class='fs-24 text-in'>
+        <text>本合同一式四份，甲乙双方各执二份，具有同等法律效力。</text>
+      </view>
+    </view>
+  </view>
+  <view class='contract-singn pd-lr-30'>
+    <view class='d-fl mb-35'>
+      <view class='jiafang fl-1 mr-32'>
+        <text>甲方：雪苑农贸市场</text>
+      </view>
+      <view class='yifang fl-1 ml-40'>
+        <text>乙方：广州钱大妈农产品有限公司</text>
+      </view>
+    </view>
+    <view class='d-fl'>
+      <view class='fl-1 mr-32 lh-90 pr'>
+        <text>2018年 12月 05日</text>
+        <image src='{{picHost}}loginRegist/zhang1.png' class='zhang'></image>
+      </view>
+      <view class='fl-1 ml-40 text-right pr'>
+        <text class='mr-32'>年<text class='ml-40 mr-32'>月</text>日</text>
+        <view class='qianshu d-fl al-center jc-center fs-24 color-666 gray-border' catchtap='showDialog'>
+          <text>点击签署</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <van-dialog id="van-dialog" />
+</view>

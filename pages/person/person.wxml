@@ -32,7 +32,7 @@
       </view>
       <text class='iconfont icon-xiangxia rotate-ne-90 fs-42'></text>
     </navigator>
-    <navigator class='item pd-tb-26 d-fl al-center' hover-class='none' url=''>
+    <navigator class='item pd-tb-26 d-fl al-center' hover-class='none' url='/pages/creditFile/creditFile'>
       <text class='iconfont icon-dangan mr-10 mt-6 color-star'></text>
       <text>信用档案</text>
       <view class='tips fl-1 fs-22 color-gray text-right mr-10 d-fl jc-end al-center'>

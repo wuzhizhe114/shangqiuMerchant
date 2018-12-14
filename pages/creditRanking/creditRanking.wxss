@@ -1,1 +1,68 @@
 /* pages/creditRanking/creditRanking.wxss */
+.header {
+  padding: 40rpx 30rpx;
+}
+.header .user-icon {
+  width: 120rpx;
+  height: 100rpx;
+  border: 2px solid #fff;
+}
+
+.ranking-header {
+  /* padding-top: 20rpx; */
+  /* align-items: flex-end; */
+  height: 300rpx;
+  background: #fff url('https://clueless.gitee.io/shangqiuimages/merchant/credit/ranking-bg1.png') no-repeat;
+  background-size: 100% 100%;
+}
+.ranking-header .pic{
+  margin-top: 147rpx;
+}
+.ranking-header .pic,
+.ranking-other .item .pic {  
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+
+.ranking-header .first .pic {
+  margin-top: 119rpx;
+}
+.ranking-header .third .pic {
+  margin-top: 137rpx;
+}
+
+.ranking-other .item:last-child {
+  border-bottom: none;
+}
+
+/* 趋势弹窗 */
+.qushi-box {
+  padding: 30rpx;
+}
+.qushi-box .qushitu {
+  width: 80vw;
+  height: 360rpx;
+}
+
+/* .ranking-header .first {
+  height: 280rpx;
+  background: #fff url('https://clueless.gitee.io/shangqiuimages/merchant/credit/first_box.png') no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  z-index: 1;
+}
+.ranking-header .second,
+.ranking-header .third {
+  height: 264rpx;
+}
+.ranking-header .second {
+  background: #fff url('https://clueless.gitee.io/shangqiuimages/merchant/credit/second_box.png') no-repeat;
+  background-size: 100% 100%;
+  margin-right: -30rpx
+}
+.ranking-header .third {
+  background: #fff url('https://clueless.gitee.io/shangqiuimages/merchant/credit/third_box.png') no-repeat;
+  background-size: 100% 100%;
+  margin-left: -30rpx
+} */

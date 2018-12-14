@@ -1,0 +1,67 @@
+/* pages/creditFile/creditFile.wxss */
+.basic-info .pic {
+  width: 150rpx;
+  height: 120rpx;
+}
+
+.container .van-tab {
+  /* background-color: #fa595e; */
+  color: #fff;
+}
+.container .van-tabs--card {
+  margin: 0;
+}
+
+.container .market-score {
+  background: url('https://clueless.gitee.io/shangqiuimages/merchant/credit/leida-bg.png') no-repeat #fff;
+  background-size: 100% 100%;
+}
+
+.container .market-score .leidatu {
+  width: 100%;
+  height: 300rpx;
+}
+
+.container .my-credit .zhexiantu {
+  width: 100%;
+  height: 300rpx;
+}
+
+.container .zige-pic {
+  width: 210rpx;
+  height: 140rpx;
+}
+
+.container .zige-pic1 {
+  height: 150rpx;
+}
+
+
+
+.table .tr > view:first-child {
+  width: 20%;
+}
+
+.table .tr > view:nth-child(2) {
+  width: 25%;
+}
+
+.table .tr > view:nth-child(3) {
+  width: 25%;
+  text-align: left;
+}
+
+.table .tr > view:last-child {
+  width: 30%;
+}
+
+.table .tr {
+  padding: 10rpx 0;
+}
+
+.table .tr:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+.table .tr:nth-child(even) {
+  background-color: #eeeeee;
+}

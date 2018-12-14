@@ -8,7 +8,7 @@ Page({
    */
   data: {
     picHost: app.globalData.picHost,
-    showPopup: true
+    showPopup: false
   },
   showErweimaPopup() {
     this.setData({

@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "排行榜",
   "usingComponents": {
+    "van-popup": "vant-weapp/popup/index",
+    "ec-canvas": "/component/ec-canvas/ec-canvas"
   }
 }

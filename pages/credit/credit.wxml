@@ -18,7 +18,7 @@
           </text>
         </view>
       </view>
-      <navigator class='d-fl fl-col pr' hover-class='block-active' url=''>
+      <navigator class='d-fl fl-col pr' hover-class='block-active' url='/pages/creditRanking/creditRanking'>
         <view class='text-center color-jiuhong fw-bold'>
           <text class='fs-42 fs-italic mr-10'>3</text>
           <text class='iconfont icon-tubiaoshangshengqushi fs-42'></text>

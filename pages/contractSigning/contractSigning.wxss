@@ -1,0 +1,19 @@
+/* pages/contractSigning/contractSigning.wxss */
+.contract-desc {
+  padding: 60rpx 30rpx 120rpx;
+}
+
+.contract-singn .zhang {
+  position: absolute;
+  left: 30rpx;
+  top: -30rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+.contract-singn .qianshu {
+  position: absolute;
+  right: 0;
+  top: -30rpx;
+  width: 180rpx;
+  height: 180rpx;
+}

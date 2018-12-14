@@ -1,4 +1,87 @@
 <!--pages/creditRanking/creditRanking.wxml-->
-<view class='contianer'>
-  
+<view class='container'>
+  <view class='header theme-bg color-white mb-20'>
+    <view class='d-fl'>
+      <image src='{{picHost}}demo/qiandama.png' class='user-icon mr-10'></image>
+      <view class='fl-1'>
+        <view class='fw-bold fs-italic'>
+          <text class='fs-58 lh-1 mr-10'>3</text>
+          <text class='iconfont .icon-tubiaoshangshengqushi fs-58'></text>
+        </view>
+        <view>
+          <text>我的排名</text>
+        </view>
+      </view>
+      <view class='text-center al-s-center' catchtap='showQushiPopup'>
+        <text class='iconfont icon-benzhoutongji fs-42'></text>
+        <view>
+          <text>查看趋势</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='ranking-header d-fl'>
+    <view class='second fl-1'>
+
+    </view>
+    <view class='first fl-1'></view>
+    <view class='third fl-1'></view>
+  </view> -->
+  <view class='ranking-header d-fl fs-22 text-center color-666 fw-bold mb-20'>
+    <view class='second fl-1'>
+      <image src='{{picHost}}demo/qiandama.png' class='pic'></image>
+      <view class='mt-6'>
+        <text>信用分：89</text>
+      </view>
+    </view>
+    <view class='first fl-1'>
+      <image src='{{picHost}}demo/qiandama.png' class='pic'></image>
+      <view class='mt-6'>
+        <text>信用分：87</text>
+      </view>
+    </view>
+    <view class='third fl-1'>
+      <image src='{{picHost}}demo/qiandama.png' class='pic'></image>
+      <view class='mt-6'>
+        <text>信用分：87</text>
+      </view>
+    </view>
+  </view>
+  <view class='ranking-other pd-lr-30 color-666 fs-32'>
+    <view class='item pd-tb-20 d-fl al-center fw-bold gray-b-b2'>
+      <text class=''>4</text>
+      <image src='{{picHost}}demo/qiandama.png' class='pic ml-24'></image>
+      <view class='fl-1 ml-24 mr-10'>
+        <text>转角爱咖啡店</text>
+      </view>
+      <text>信用分：80</text>
+    </view>
+    <view class='item pd-tb-20 d-fl al-center fw-bold gray-b-b2'>
+      <text class=''>4</text>
+      <image src='{{picHost}}demo/qiandama.png' class='pic ml-24'></image>
+      <view class='fl-1 ml-24 mr-10'>
+        <text>转角爱咖啡店</text>
+      </view>
+      <text>信用分：80</text>
+    </view>
+    <view class='item pd-tb-20 d-fl al-center fw-bold gray-b-b2'>
+      <text class=''>4</text>
+      <image src='{{picHost}}demo/qiandama.png' class='pic ml-24'></image>
+      <view class='fl-1 ml-24 mr-10'>
+        <text>转角爱咖啡店</text>
+      </view>
+      <text>信用分：80</text>
+    </view>
+  </view>
+  <!-- 趋势弹窗 -->
+  <van-popup show="{{ showPopup }}" bind:close="qushiPopupClose">
+    <view class='qushi-box'>
+      <view class='text-center mb-10'>
+        <text>钱大妈店铺2018年信用趋势分析</text>
+      </view>
+      <view class='qushitu'>
+        <ec-canvas id="mychart" canvas-id="mychart-qushi" ec="{{ ec }}"></ec-canvas>
+      </view>
+    </view>
+  </van-popup>
 </view>
