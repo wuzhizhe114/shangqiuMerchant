@@ -1,15 +1,18 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/productList/productList",
+    "pages/product/product",
     "pages/credit/credit",
+    "pages/myData/myData",
+    "pages/myComment/myComment",
     "pages/creditFile/creditFile",
     "pages/contractSigning/contractSigning",
-    "pages/index/index",
     "pages/creditRanking/creditRanking",
     "pages/person/person",
     "pages/enterReview/enterReview",
     "pages/regist/regist",
     "pages/login/login",
-    "pages/product/product",
     "pages/logs/logs"
   ],
   "window": {

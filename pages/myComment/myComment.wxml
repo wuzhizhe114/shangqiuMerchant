@@ -1,0 +1,102 @@
+<!--pages/myComment/myComment.wxml-->
+<view class='container bg-gray'>
+  <!-- 统计 -->
+  <view class='statistical pd-lr-30 mb-20 box-sh text-center' hidden='{{ true }}'>
+    <view class='st-head d-fl gray-b-b lh-90 fw-bold'>
+      <view class='fl-1'>信用评级</view>
+      <view class='other-item'>今日</view>
+      <view class='other-item'>本周</view>
+      <view class='other-item'>本月</view>
+    </view>
+    <view class='st-con lh-72 fs-24 color-666'>
+      <view class='tr d-fl'>
+        <view class='fl-1 color-star text-left'>
+          <text class='mr-10 color-666'>五星</text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-xingxingxianmiao'></text>
+        </view>
+        <view class='other-item'>12</view>
+        <view class='other-item'>47</view>
+        <view class='other-item'>154</view>
+      </view>
+      <view class='tr d-fl'>
+        <view class='fl-1 color-star text-left'>
+          <text class='mr-10 color-666'>五星</text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-xingxingxianmiao'></text>
+        </view>
+        <view class='other-item'>12</view>
+        <view class='other-item'>47</view>
+        <view class='other-item'>154</view>
+      </view>
+    </view>
+  </view>
+  <view class='comment-list pd-lr-30 color-666 bg-white pb-60'>
+    <view class='nav lh-90 gray-b-b'>
+      <text data-active="0" class='{{commentActive === "0" ? "theme-color" : ""}}' catchtap='changeCommentActive'>今日</text>
+      <text data-active="1" class='{{commentActive === "1" ? "theme-color" : ""}}' catchtap='changeCommentActive'>五星</text>
+      <text data-active="2" class='{{commentActive === "2" ? "theme-color" : ""}}' catchtap='changeCommentActive'>四星</text>
+      <text data-active="3" class='{{commentActive === "3" ? "theme-color" : ""}}' catchtap='changeCommentActive'>三星</text>
+      <text data-active="4" class='{{commentActive === "4" ? "theme-color" : ""}}' catchtap='changeCommentActive'>二星</text>
+      <text data-active="5" class='{{commentActive === "5" ? "theme-color" : ""}}' catchtap='changeCommentActive'>一星</text>
+    </view>
+    <view class='item pd-tb-26 dash-gray-b'>
+      <view class='d-fl mb-20'>
+        <view class='name fl-1 fw-bold'>匿名用户：sdj210.0333</view>
+        <text class='ml-24 fs-22 color-gray'>2018-11-16</text>
+      </view>
+      <view class='mb-20 color-star'>
+        <text class='color-666'>信用评级：</text>
+        <text class='iconfont icon-stars'></text>
+        <text class='iconfont icon-stars'></text>
+        <text class='iconfont icon-stars'></text>
+        <text class='iconfont icon-stars'></text>
+        <text class='iconfont icon-xingxingxianmiao'></text>
+      </view>
+      <view class='mb-20'>
+        <text class='iconfont icon-yinxiang theme-color mr-10 fs-36'></text>
+        <text>印象：</text>
+        <text class='round-tag'>价格公道</text>
+        <text class='round-tag'>价格公道</text>
+        <text class='round-tag'>价格公道</text>
+      </view>
+      <view class=''>
+        <text class='iconfont icon-pinglun theme-color mr-10 fs-36'></text>
+        <text>评语：</text>
+        <text class='theme-color'>价格公道</text>
+      </view>
+    </view>
+    <view class='item pd-tb-26 dash-gray-b'>
+      <view class='d-fl mb-20'>
+        <view class='name fl-1 fw-bold'>匿名用户：sdj210.0333</view>
+        <text class='ml-24 fs-22 color-gray'>2018-11-16</text>
+      </view>
+      <view class='mb-20 color-star'>
+        <text class='color-666'>信用评级：</text>
+        <text class='iconfont icon-stars'></text>
+        <text class='iconfont icon-stars'></text>
+        <text class='iconfont icon-stars'></text>
+        <text class='iconfont icon-stars'></text>
+        <text class='iconfont icon-xingxingxianmiao'></text>
+      </view>
+      <view class='mb-20'>
+        <text class='iconfont icon-yinxiang theme-color mr-10 fs-36'></text>
+        <text>印象：</text>
+        <text class='round-tag'>价格公道</text>
+        <text class='round-tag'>价格公道</text>
+        <text class='round-tag'>价格公道</text>
+      </view>
+      <view class=''>
+        <text class='iconfont icon-pinglun theme-color mr-10 fs-36'></text>
+        <text>评语：</text>
+        <text class='theme-color'>价格公道</text>
+      </view>
+    </view>
+  </view>
+</view>

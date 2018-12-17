@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarTitleText": "商品管理",
+  "usingComponents": {
+    "van-popup": "vant-weapp/popup/index"
+  }
+}

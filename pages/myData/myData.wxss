@@ -1,0 +1,13 @@
+/* pages/myData/myData.wxss */
+.basic-info .tr .left {
+  width: 230rpx;
+  background-color: #f1f1f1;
+  text-align: right;
+}
+.basic-info .tr .right {
+  background-color: #fbe2e3; 
+}
+
+.paperwork .img-box {
+  padding-left: 230rpx;
+}

@@ -1,0 +1,46 @@
+<!--pages/productList/productList.wxml-->
+<view class='container'>
+  <view class='product-box pd-lr-30'>
+    <view class='product-nav d-fl text-center lh-90 gray-b-b'>
+      <text data-active="0" catchtap='changeNavActive' class='fl-1 pr {{productNavActive === "0" ? "active" : ""}}'>上架商品</text>
+      <text data-active="1" catchtap='changeNavActive' class='fl-1 pr {{productNavActive === "1" ? "active" : ""}}'>商品类别</text>
+      <text data-active="2" catchtap='changeNavActive' class='fl-1 pr {{productNavActive === "2" ? "active" : ""}}'>商品价格</text>
+      <text data-active="3" catchtap='changeNavActive' class='fl-1 pr {{productNavActive === "3" ? "active" : ""}}'>下架商品</text>
+    </view>
+    <van-checkbox-group value="{{ checkResult }}" bind:change="onCheckboxChange" class="product-list">
+      <view class='item d-fl pd-tb-26 gray-b-b2' wx:for="{{productList}}" wx:key="{{item.id}}">
+        <van-checkbox class='al-s-center' checked-color="#fa595e" name="{{item.id}}">
+        </van-checkbox>
+        <image src='{{picHost}}{{item.picUrl}}' class='item-pic ml-24'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl mb-10'>
+            <view class='fl-1'>
+              <text>{{item.name}}</text>
+            </view>
+            <text class='theme-color'>{{item.price}}元/斤</text>
+          </view>
+          <view class='d-fl fs-22 mb-10'>
+            <text class='fl-1'>分类：{{item.category}}</text>
+            <text class='color-blue'>产地：{{item.chandi}}</text>
+          </view>
+          <view class='d-fl fs-22'>
+            <view class='fl-1 d-fl'>
+              <text class='iconfont icon-shijian color-star fs-28 mr-10'></text>
+              <text>进货日期：{{item.jinhuo}}</text>
+            </view>
+            <text>保存方式：{{item.baocun}}</text>
+          </view>
+        </view>
+      </view>
+    </van-checkbox-group>
+  </view>
+  <view class='batch-operate d-fl al-center color-white'>
+    <view class='fl-1'>
+      <van-checkbox value="{{ checkedAll }}" checked-color="#fa595e" bind:change="changeCheckedAll">全选</van-checkbox>
+    </view>
+    <view class='d-fl al-center'>
+      <text>合计：<text class='theme-color'>1</text> 个商品</text>
+      <van-button class='mini ml-24' type='primary'>下架</van-button>
+    </view>
+  </view>
+</view>

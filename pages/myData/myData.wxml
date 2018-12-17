@@ -1,0 +1,91 @@
+<!--pages/myData/myData.wxml-->
+<view class='container'>
+  <view class='basic-info pd-lr-30 mb-35'>
+    <view class='table pd-tb-26 lh-72 fs-24 dash-gray-b'>
+      <view class='tr d-fl gray-b-b'>
+        <text class='left'>企业名称：</text>
+        <text class='right fl-1'></text>
+      </view>
+      <view class='tr d-fl gray-b-b'>
+        <text class='left'>社会统一信用代码：</text>
+        <text class='right fl-1'></text>
+      </view>
+      <view class='tr d-fl gray-b-b'>
+        <text class='left'>经营者：</text>
+        <text class='right fl-1'></text>
+      </view>
+      <view class='tr d-fl gray-b-b'>
+        <text class='left'>组成形式：</text>
+        <text class='right fl-1'></text>
+      </view>
+      <view class='tr d-fl gray-b-b'>
+        <text class='left'>注册地址：</text>
+        <text class='right fl-1'></text>
+      </view>
+      <view class='tr d-fl gray-b-b'>
+        <text class='left'>注册日期：</text>
+        <text class='right fl-1'></text>
+      </view>
+      <view class='tr d-fl'>
+        <text class='left'>经营范围：</text>
+        <text class='right fl-1'></text>
+      </view>
+    </view>
+  </view>
+  <view class='paperwork pd-lr-30'>
+    <view class='item mb-20'>
+      <view class='mb-10'>《营业执照》</view>
+      <view class='img-box d-fl'>
+        <view class='upload-img d-fl fl-col jc-center al-center gray-border pr' hover-class='none'>
+          <text class='iconfont icon-camera'></text>
+          <image class='temp-pic' src='{{picHost}}demo/first_pic.png'></image>
+        </view>
+        <!-- <van-button class='mini d-fl al-center ml-24' type='primary' disabled='{{true}}'>编辑</van-button> -->
+        <van-button class='mini d-fl al-center ml-24' type='primary'>编辑</van-button>
+      </view>
+    </view>
+    <view class='item mb-20'>
+      <view class='mb-10'>《食品流通许可证》</view>
+      <view class='img-box d-fl'>
+        <view class='upload-img d-fl fl-col jc-center al-center gray-border pr' hover-class='none'>
+          <text class='iconfont icon-camera'></text>
+          <image class='temp-pic' src='{{picHost}}demo/first_pic.png'></image>
+        </view>
+        <van-button class='mini d-fl al-center ml-24' type='primary'>编辑</van-button>
+      </view>
+    </view>
+    <view class='item mb-20'>
+      <view class='mb-10'>《食品安全许可证》</view>
+      <view class='img-box d-fl'>
+        <view class='upload-img d-fl fl-col jc-center al-center gray-border pr' hover-class='none'>
+          <text class='iconfont icon-camera'></text>
+          <image class='temp-pic' src='{{picHost}}demo/first_pic.png'></image>
+        </view>
+        <van-button class='mini d-fl al-center ml-24' type='primary'>编辑</van-button>
+      </view>
+    </view>
+    <view class='item mb-20'>
+      <view class='mb-10'>《从业人员健康证》</view>
+      <view class='img-box d-fl'>
+        <view class='upload-img d-fl fl-col jc-center al-center gray-border pr' hover-class='none'>
+          <text class='iconfont icon-camera'></text>
+          <image class='temp-pic' src='{{picHost}}demo/first_pic.png'></image>
+        </view>
+        <van-button class='mini d-fl al-center ml-24' type='primary'>编辑</van-button>
+      </view>
+    </view>
+    <view class='item mb-60'>
+      <view class='mb-10'>《进货凭证》</view>
+      <view class='img-box d-fl'>
+        <view class='upload-img d-fl fl-col jc-center al-center gray-border pr' hover-class='none'>
+          <text class='iconfont icon-camera'></text>
+          <image class='temp-pic' src='{{picHost}}demo/first_pic.png'></image>
+        </view>
+        <van-button class='mini d-fl al-center ml-24' type='primary'>编辑</van-button>
+      </view>
+    </view>
+    <view class='btn-box mb-60'>
+      <van-button type='primary'>保存</van-button>
+    </view>
+  </view>
+</view>

@@ -1,2 +1,81 @@
 <!--pages/product/product.wxml-->
-<text>pages/product/product.wxml</text>
+<view class='container bg-gray'>
+  <view class='basic-info pd-lr-30 box-sh mb-35'>
+    <view class='lh-90 text-center theme-color gray-b-b'>
+      <text>市场概况</text>
+    </view>
+    <view class='d-fl jc-center pt-30 gray-b-b'>
+      <view class='fs-24'>
+        <view class='mb-26'>
+          <text>本市场营业时间：</text>
+          <text>上午 <text class='color-blue'>06</text> 点至下午 <text class='color-blue'>20</text> 点</text>
+        </view>
+        <view class='mb-26'>
+          <text>本市场在售商品：</text>
+          <text><text class='color-blue'>12</text> 个品类，共 <text class='color-blue'>328</text> 个商品</text>
+        </view>
+        <view class='mb-26'>
+          <text>本市场摊位总数：</text>
+          <text> <text class='color-blue'>324</text> 个摊位，已入住 <text class='color-blue'>320</text> 个</text>
+        </view>
+      </view>
+    </view>
+    <view class='lh-90 text-center theme-color gray-b-b'>
+      <text>本店概况</text>
+    </view>
+    <view class='d-fl jc-center pt-30 bendian'>
+      <view class='fs-24'>
+        <view class='mb-26 item'>
+          <text>本店营业时间：</text>
+          <text>上午 <text class='color-blue'>06</text> 点至下午 <text class='color-blue'>20</text> 点</text>
+        </view>
+        <view class='mb-26 item'>
+          <text>本店在售商品：</text>
+          <text><text class='color-blue'>12</text> 个品类，共 <text class='color-blue'>328</text> 个商品</text>
+        </view>
+        <view class='mb-26 item'>
+          <text>本店商铺位置：</text>
+          <text> <text class='color-blue'>324</text> 个摊位，已入住 <text class='color-blue'>320</text> 个</text>
+        </view>
+        <view class='mb-26 item'>
+          <text>上架商品：</text>
+          <text> <text class='color-blue'>324</text> 个摊位，已入住 <text class='color-blue'>320</text> 个</text>
+        </view>
+        <view class='mb-26 item'>
+          <text>下架商品：</text>
+          <text> <text class='color-blue'>324</text> 个摊位，已入住 <text class='color-blue'>320</text> 个</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='category bg-white pd-lr-30 pb-60'>
+    <view class='lh-90 text-center theme-color'>本店经营品类</view>
+    <view class='fs-22 color-gray mb-35'>其中：带有小括号的品类，为当前您在该品类中，在售的商品数量</view>
+    <view class='cate-list d-fl jc-space-b fw-w'>
+      <navigator class='item d-fl fl-col' hover-class='none' url=''>
+        <image src='{{picHost}}product/shuichan.png'></image>
+        <view class='lh-60 text-center'>
+          <text>水产</text>
+        </view>
+      </navigator>
+      <navigator class='item d-fl fl-col' hover-class='none' url=''>
+        <image src='{{picHost}}product/liangyou.png'></image>
+        <view class='lh-60 text-center'>
+          <text>粮油（<text class='color-blue'>6</text>）</text>
+        </view>
+      </navigator>
+      <navigator class='item d-fl fl-col' hover-class='none' url=''>
+        <image src='{{picHost}}product/fushi.png'></image>
+        <view class='lh-60 text-center'>
+          <text>副食</text>
+        </view>
+      </navigator>
+      <navigator class='item d-fl fl-col' hover-class='none' url=''>
+        <image src='{{picHost}}product/shucai.png'></image>
+        <view class='lh-60 text-center'>
+          <text>蔬菜</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

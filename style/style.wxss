@@ -62,7 +62,7 @@
   height: 56rpx;
   line-height: 56rpx;
   border-radius: 56rpx;
-  margin: 0 -10rpx 4rpx 0;
+  /* margin: 0 -10rpx 4rpx 0; */
   font-size: 22rpx;
 }
 
@@ -83,4 +83,37 @@
   background-color: #e94d4d;
   border-radius: 50%;
   vertical-align: middle;
+}
+
+/* 主题圆角 tag */
+.round-tag {
+  display: inline-block;
+  padding: 0 20rpx;
+  line-height: 40rpx;
+  border-radius: 40rpx;
+  border: 1px solid #fa595e;
+  margin: 0 10rpx;
+  font-size: 22rpx;
+}
+
+/* 上传图片框 样式 */
+.upload-img {
+  width: 276rpx;
+  height: 190rpx;
+  /* padding: 22rpx 76rpx; */
+  background-color: #fafafa;
+  border-radius: 3px;
+  color: #d5d5d5;
+  font-size: 22rpx;
+}
+.upload-img .iconfont {
+  font-size: 106rpx;
+}
+.upload-img .temp-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }

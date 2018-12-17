@@ -1,0 +1,16 @@
+/* pages/myComment/myComment.wxss */
+.statistical {
+  background: #fff url('https://clueless.gitee.io/shangqiuimages/merchant/person/comment-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.statistical .other-item {
+  width: 20%;
+}
+
+/* 评论列表 */
+.comment-list .nav > text {
+  margin: 0 20rpx;
+} 
+.comment-list .item:last-child {
+  border-bottom: none;
+} 

@@ -9,18 +9,18 @@
       <image class='erweima-pic' src='{{picHost}}person/erweima.png' bindtap='showErweimaPopup'></image>
     </view>
     <view class='d-fl jc-space-b text-center color-white'>
-      <view class='fl-1 gray-b-r'>
+      <navigator class='fl-1 gray-b-r' url='/pages/myComment/myComment'>
         <text>365</text>
         <view>收到评论</view>
-      </view>
-      <view class='fl-1 gray-b-r'>
+      </navigator>
+      <navigator class='fl-1 gray-b-r'>
         <text>365</text>
         <view>关注我的</view>
-      </view>
-      <view class='fl-1'>
+      </navigator>
+      <navigator class='fl-1'>
         <text>365</text>
         <view>7天访客</view>
-      </view>
+      </navigator>
     </view>
   </view>
   <view class='xiaoxi mb-20 pd-lr-30 bg-white box-sh'>
@@ -42,7 +42,7 @@
     </navigator>
   </view>
   <view class='other fl-1 pd-lr-30 bg-white'>
-    <navigator class='item pd-tb-26 d-fl al-center gray-b-b2' hover-class='none' url=''>
+    <navigator class='item pd-tb-26 d-fl al-center gray-b-b2' hover-class='none' url='/pages/myData/myData'>
       <text class='iconfont icon-neirongyingxiangli mr-10 mt-6 theme-color'></text>
       <text>我的资料</text>
       <view class='tips fl-1 fs-22 color-gray text-right mr-10 d-fl jc-end al-center'>

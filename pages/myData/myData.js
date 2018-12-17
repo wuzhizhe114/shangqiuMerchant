@@ -1,4 +1,4 @@
-// pages/product/product.js
+// pages/myData/myData.js
 let app = getApp();
 
 Page({

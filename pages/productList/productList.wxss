@@ -1,0 +1,47 @@
+/* pages/productList/productList.wxss */
+
+.product-box {
+  padding-bottom: 100rpx;
+}
+
+.product-nav > .fl-1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fa595e;
+  transition: all .3s;
+	-webkit-transition: all .3s;
+}
+.product-nav .active {
+  color: #fa595e;
+}
+.product-nav .fl-1.active::after {
+  width: 100%;
+}
+
+/* .product-list .item:last-child {
+  border-bottom: none;
+} */
+.product-list .item-pic {
+  width: 146rpx;
+  height: 116rpx;
+}
+
+
+/* 批量操作 */
+.batch-operate {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 26rpx 30rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.batch-operate .mini .van-button {
+  margin-top: 0;
+  padding: 0 30rpx;
+  line-height: 52rpx;
+}

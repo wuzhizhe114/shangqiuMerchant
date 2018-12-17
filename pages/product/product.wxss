@@ -1,1 +1,23 @@
 /* pages/product/product.wxss */
+.basic-info {
+  background: #fff url('https://clueless.gitee.io/shangqiuimages/merchant/product/product-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.bendian .item {
+  display: flex;
+}
+
+.bendian .item > text:first-child {
+  width: 170rpx;
+  text-align: right;
+}
+
+.cate-list .item {
+  width: 210rpx;
+}
+.cate-list .item > image {
+  width: 100%;
+  height: 130rpx;
+  border: 1px solid #ddd;
+}

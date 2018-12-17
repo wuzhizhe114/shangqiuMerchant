@@ -1,4 +1,4 @@
-// pages/product/product.js
+// pages/myComment/myComment.js
 let app = getApp();
 
 Page({
@@ -8,6 +8,14 @@ Page({
    */
   data: {
     picHost: app.globalData.picHost,
+    commentActive: '0',
+  },
+  // 切换 评论条件
+  changeCommentActive (e) {
+    console.log(e)
+    this.setData({
+      commentActive: e.currentTarget.dataset['active']
+    })
   },
 
   /**

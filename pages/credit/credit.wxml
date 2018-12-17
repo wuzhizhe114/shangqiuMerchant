@@ -11,10 +11,10 @@
           <text>信用等级：</text>
           <text class='color-star'>
             <text class='iconfont icon-stars'></text>
-          <text class='iconfont icon-stars'></text>
-          <text class='iconfont icon-stars'></text>
-          <text class='iconfont icon-stars'></text>
-          <text class='iconfont icon-xingxingxianmiao'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
           </text>
         </view>
       </view>
@@ -85,10 +85,10 @@
   <view class='pinglun bg-white pd-lr-30 box-sh mb-60'>
     <view class='lh-90 clearfix fs-32 gray-b-b'>
       <text class='fl-l theme-color'>店铺评论</text>
-      <navigator class='fl-r color-gray fs-24' hover-class='none' url=''>更多</navigator>
+      <navigator class='fl-r color-gray fs-24' hover-class='none' url='/pages/myComment/myComment'>更多</navigator>
     </view>
     <view class='pinglun-list'>
-      <navigator hover-class='none' url='' class='list-item pd-tb-26 dash-gray-b'>
+      <navigator hover-class='none' url='/pages/myComment/myComment' class='list-item pd-tb-26 dash-gray-b'>
         <view class='d-fl mb-10'>
           <image class='user-pic mr-10' src='{{picHost}}demo/third_pic.png'></image>
           <view class='fl-1'>

@@ -195,6 +195,9 @@
 .pt-b40 {
   padding-top: 40%;
 }
+.pt-30 {
+  padding-top: 30rpx;
+}
 .pb-60 {
   padding-bottom: 60rpx;
 }
@@ -300,6 +303,9 @@
 .lh-72 {
   line-height: 72rpx;
 }
+.lh-60 {
+  line-height: 60rpx;
+}
 
 .lh-42 {
   line-height: 42rpx;
@@ -390,6 +396,10 @@
 
 .al-s-center {
   align-self: center;
+}
+
+.fw-w {
+  flex-wrap: wrap;
 }
 
 /* 浮动 */
