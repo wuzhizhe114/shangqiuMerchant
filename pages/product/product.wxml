@@ -52,26 +52,31 @@
     <view class='lh-90 text-center theme-color'>本店经营品类</view>
     <view class='fs-22 color-gray mb-35'>其中：带有小括号的品类，为当前您在该品类中，在售的商品数量</view>
     <view class='cate-list d-fl jc-space-b fw-w'>
-      <navigator class='item d-fl fl-col' hover-class='none' url=''>
-        <image src='{{picHost}}product/shuichan.png'></image>
+      <view class='item'>
+        <navigator class='pic add d-fl al-center jc-center pr' hover-class='block-active' url='/pages/productAdd/productAdd'>
+          <text class='iconfont icon-wuuiconxiangjifangda theme-color fs-58'></text>          
+        </navigator>
+      </view>
+      <navigator class='item d-fl fl-col' hover-class='none' url='/pages/productList/productList'>
+        <image class='pic' src='{{picHost}}product/shuichan.png'></image>
         <view class='lh-60 text-center'>
           <text>水产</text>
         </view>
       </navigator>
       <navigator class='item d-fl fl-col' hover-class='none' url=''>
-        <image src='{{picHost}}product/liangyou.png'></image>
+        <image class='pic' src='{{picHost}}product/liangyou.png'></image>
         <view class='lh-60 text-center'>
           <text>粮油（<text class='color-blue'>6</text>）</text>
         </view>
       </navigator>
       <navigator class='item d-fl fl-col' hover-class='none' url=''>
-        <image src='{{picHost}}product/fushi.png'></image>
+        <image class='pic' src='{{picHost}}product/fushi.png'></image>
         <view class='lh-60 text-center'>
           <text>副食</text>
         </view>
       </navigator>
       <navigator class='item d-fl fl-col' hover-class='none' url=''>
-        <image src='{{picHost}}product/shucai.png'></image>
+        <image class='pic' src='{{picHost}}product/shucai.png'></image>
         <view class='lh-60 text-center'>
           <text>蔬菜</text>
         </view>

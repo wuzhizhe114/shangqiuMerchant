@@ -12,7 +12,7 @@
       </view>
       <view class='step-02 d-fl fl-col al-center'>
         <text class='round-count mb-10 {{showStep === "3" ? "on" : ""}}'>2</text>
-        <text>合同审核</text>
+        <text>审核结果</text>
       </view>
     </view>
   </view>
@@ -59,16 +59,16 @@
       <view class='review-item'>
         <view class='item-title d-fl al-center mb-35'>
           <text class='iconfont icon-license theme-color mr-10 fs-36'></text>
-          <text>店铺名称</text>
+          <text>店铺简称</text>
         </view>
         <view class='item-con'>
-          <view class='select-box d-fl gray-border pr mb-35' hover-class='block-active' id="dianpuName" data-action-name="店铺名称依据" catchtap='showActionList'>
+          <!-- <view class='select-box d-fl gray-border pr mb-35' hover-class='block-active' id="dianpuName" data-action-name="店铺名称依据" catchtap='showActionList'>
             <text class='fl-1 fs-24 text-center'>{{submitData.dianpuNameId}}</text>
             <text class='iconfont icon-sanjiaoxing'></text>
-          </view>
+          </view> -->
           <view class='input-box-line'>
             <!-- <text class='iconfont icon-jigou theme-color fs-36'></text> -->
-            <input class='input dianpu-name' placeholder-class='ph-color' type='text' placeholder='请输入店铺名称（15字以内）'></input>
+            <input class='input dianpu-name' placeholder-class='ph-color' type='text' placeholder='请输入店铺简称（15字以内）'></input>
             <!-- <text class='iconfont icon-close1 fs-36 color-gray'></text> -->
           </view>
         </view>
@@ -79,10 +79,10 @@
           <text>营业类别</text>
         </view>
         <view class='item-con'>
-          <view class='select-box d-fl gray-border pr mb-35' hover-class='block-active' data-action-name="请选择营业类别" catchtap='showActionList'>
+          <!-- <view class='select-box d-fl gray-border pr mb-35' hover-class='block-active' data-action-name="请选择营业类别" catchtap='showActionList'>
             <text class='fl-1 fs-24 text-center'>{{submitData.yingyeCate}}</text>
             <text class='iconfont icon-sanjiaoxing'></text>
-          </view>
+          </view> -->
           <view class='upload-img d-fl fl-col jc-center al-center gray-border pr mb-20' hover-class='block-active'>
             <text class='iconfont icon-camera'></text>
             <text>食品流通许可证</text>
@@ -119,19 +119,21 @@
         <view class='text-center mb-35'>
           <text class='iconfont icon-chenggong theme-color'></text>
         </view>
-        <view class='mb-45 fs-30'>
-          <text>审核成功，请签署商户入驻电子合同</text>
+        <view class='mb-45 fs-36 text-center'>
+          <!-- <text>审核成功，请签署商户入驻电子合同</text> -->
+          <text>审核成功</text>
         </view>
         <view class='fs-24 color-gray mb-35'>
-          <text>请核对合同条款及内容并完成签署，若合同内容有误，可联系市场人员进行修改 </text>
+          <!-- <text>请核对合同条款及内容并完成签署，若合同内容有误，可联系市场人员进行修改 </text> -->
         </view>
-        <view class='fs-24'>
+        <view class='fs-24 text-center'>
           <text>市场联系方式：</text>
           <text class='theme-color'>07558623758</text>
         </view>
       </view>
       <view class='btn-box'>
-        <van-button block="{{true}}" type="primary">签署合同</van-button>      
+         <navigator hover-class='none' open-type='switchTab' url='/pages/credit/credit'>
+         <van-button block="{{true}}" type="primary">进入商户</van-button></navigator>
       </view>
     </view>
   </view>

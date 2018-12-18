@@ -16,8 +16,12 @@
 .cate-list .item {
   width: 210rpx;
 }
-.cate-list .item > image {
+.cate-list .item > .pic {
   width: 100%;
   height: 130rpx;
   border: 1px solid #ddd;
+}
+.cate-list .item > .pic.add {
+  height: 134rpx;
+  border-radius: 3px;
 }

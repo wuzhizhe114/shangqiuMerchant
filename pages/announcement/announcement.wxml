@@ -1,0 +1,9 @@
+<!--pages/announcement/announcement.wxml-->
+<view class='container pd-lr-30'>
+  <navigator class='item pd-tb-26 d-fl gray-b-b' hover-class='none' url='anDetail'>
+    <view class='fl-1 text-ell'>
+      <text>标题</text>
+    </view>
+    <text class='ml-24'>2018/10/24</text>
+  </navigator>
+</view>

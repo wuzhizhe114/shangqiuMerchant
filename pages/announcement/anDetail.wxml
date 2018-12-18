@@ -1,0 +1,13 @@
+<!--pages/announcement/anDetail.wxml-->
+<view class='container pd-lr-30'>
+  <view class='lh-90 fs-32 text-center fw-bold'>标题</view>
+  <view class='d-fl fs-24 color-666 mb-45'>
+    <view class='fl-1'>
+      <text>发布者：某某市场办公室</text>
+    </view>
+    <text>发布时间：2018/10/24</text>
+  </view>
+  <view class='content lh-42 text-in'>
+    <text>内容巴拉巴拉....内容巴拉巴拉....内容巴拉巴拉....内容巴拉巴拉....内容巴拉巴拉....内容巴拉巴拉....</text>
+  </view>
+</view>

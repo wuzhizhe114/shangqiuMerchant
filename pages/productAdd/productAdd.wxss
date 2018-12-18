@@ -1,0 +1,62 @@
+/* pages/productAdd/productAdd.wxss */
+.form {
+  padding: 40rpx 30rpx;
+}
+
+.item {
+  display: flex;
+  padding: 0 40rpx;
+  margin-bottom: 30rpx;
+}
+.item .label {
+  display: flex;
+  align-items: center;
+}
+.item .input-box {
+  flex: 1;
+  height: 60rpx;
+  border-radius: 3px;
+}
+.item .input-box .input {
+  height: 100%;
+  width: 100%;
+  padding-left: 30rpx;
+}
+.item.date .input-box {
+  padding: 0 20rpx;
+  color: #666;
+  line-height: 60rpx;
+}
+
+.item .img-box {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item .img-box .img-item {
+  width: 50%;
+  height: 200rpx;
+  padding: 10rpx;
+}
+.item .img-box .img-item .pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.item .img-box .img-item.add {
+  height: 204rpx;
+  color: #d5d5d5;
+}
+.item .img-box .img-item.add > view {
+  height: 100%;
+  border-radius: 10rpx;
+}
+.item .img-box .img-item .temp-pic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

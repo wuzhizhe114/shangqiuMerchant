@@ -66,10 +66,15 @@
         <text class='round-tag'>价格公道</text>
         <text class='round-tag'>价格公道</text>
       </view>
-      <view class=''>
+      <view class='mb-20'>
         <text class='iconfont icon-pinglun theme-color mr-10 fs-36'></text>
         <text>评语：</text>
         <text class='theme-color'>价格公道</text>
+      </view>
+      <view>
+        <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10' catchtap='imagesPreview'></image>
+        <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
+        <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
       </view>
     </view>
     <view class='item pd-tb-26 dash-gray-b'>

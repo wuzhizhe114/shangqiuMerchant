@@ -1,0 +1,13 @@
+/* pages/forgetPass/forgetPass.wxss */
+.form {
+  padding: 100rpx;
+  margin-bottom: 80rpx;
+}
+.container .mini .van-button {
+  margin: 0 -10rpx 4rpx 0;
+}
+
+picker {
+  height: 200rpx;
+  color: #000;
+}

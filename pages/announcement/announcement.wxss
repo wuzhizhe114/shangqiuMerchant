@@ -1,0 +1,5 @@
+/* pages/announcement/announcement.wxss */
+
+.container .item:last-child {
+  border-bottom: none;
+}

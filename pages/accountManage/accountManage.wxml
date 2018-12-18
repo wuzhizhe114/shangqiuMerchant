@@ -1,0 +1,12 @@
+<!--pages/accountManage/accountManage.wxml-->
+<view class='container pd-30'>
+  <view class='item d-fl pd-tb-10 gray-b-b'>
+    <text class='fl-1 d-fl al-center'>头像</text>
+    <image src='{{picHost}}demo/first_pic.png' class='item-pic ml-24'></image>
+    <text class='iconfont icon-xiangxia rotate-ne-90 ml-24 fs-46'></text>
+  </view>
+  <navigator class='item d-fl pd-tb-26 gray-b-b' hover-class='none' url='/pages/forgetPass/forgetPass'>
+    <text class='fl-1 d-fl al-center'>修改密码</text>
+    <text class='iconfont icon-xiangxia rotate-ne-90 ml-24 fs-46 mr-22'></text>
+  </navigator>
+</view>

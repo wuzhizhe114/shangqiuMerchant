@@ -96,6 +96,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    // wx.showTabBar({
+    //   complete: function(e){
+    //     console.log('排行榜：',e)
+    //   }
+    // })
     // console.log('paihangbang')
     this.echartsComponnet = this.selectComponent('#mychart');
     this.init_echarts(); //初始化图表

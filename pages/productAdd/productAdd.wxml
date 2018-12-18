@@ -1,0 +1,77 @@
+<!--pages/productAdd/productAdd.wxml-->
+<view class='container'>
+  <view class='form'>
+    <view class='item'>
+      <text class='label'>商品名称：</text>
+      <view class='input-box gray-border'>
+        <input class='input' placeholder-class='ph-color' type='text' placeholder='请输入商品名称'></input>
+      </view>
+    </view>
+    <view class='item'>
+      <text class='label'>商品类别：</text>
+      <view class='input-box gray-border'>
+        <input class='input' placeholder-class='ph-color' type='text' placeholder='请输入商品类别'></input>
+      </view>
+    </view>
+    <view class='item'>
+      <text class='label'>商品价格：</text>
+      <view class='input-box gray-border'>
+        <input class='input' placeholder-class='ph-color' type='text' placeholder='请输入商品价格'></input>
+      </view>
+    </view>
+    <view class='item'>
+      <text class='label'>商品产地：</text>
+      <view class='input-box gray-border'>
+        <input class='input' placeholder-class='ph-color' type='text' placeholder='请输入商品产地'></input>
+      </view>
+    </view>
+    <view class='item date'>
+      <text class='label'>进货日期：</text>
+      <view class='input-box gray-border d-fl'>
+        <!-- <text class='fl-1'>2018-12-18</text>
+        <text class='iconfont icon-sanjiaoxing'></text> -->
+        <picker mode="date" value="{{purchaseDate}}" bindchange="bindDateChange" class='fl-1'>
+          <view class='clearfix fl-1'>
+            <text class='fl-l'>{{purchaseDate}}</text>
+            <text class='iconfont icon-sanjiaoxing fl-r'></text>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='item'>
+      <text class='label'>保存方式：</text>
+      <view class='input-box gray-border'>
+        <input class='input' placeholder-class='ph-color' type='text' placeholder='请输入商品保存方式'></input>
+      </view>
+    </view>
+    <view class='item'>
+      <text class='label al-s-start'>商品照片：</text>
+      <view class='img-box'>
+        <view class='img-item add'>
+          <view class='d-fl fl-col al-center jc-center gray-border pr' hover-class='block-active'>
+            <text class='iconfont icon-camera fs-80'></text>
+            <text class='fs-20 color-gray'>最多上传4张照片</text>
+          </view>
+        </view>
+        <view class='img-item'>
+          <image src='{{picHost}}demo/first_pic.png' class='pic gray-border'></image>
+        </view>
+      </view>
+    </view>
+    <view class='item'>
+      <text class='label al-s-start'>进货凭证：</text>
+      <view class='img-box'>
+        <view class='img-item add'>
+          <view class='d-fl fl-col al-center jc-center gray-border pr' hover-class='block-active'>
+            <text class='iconfont icon-camera fs-80'></text>
+            <text class='fs-20 color-gray'>最多上传1张照片</text>
+            <image src='{{picHost}}demo/first_pic.png' class='temp-pic' hidden='{{1}}'></image>          
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='btn-box'>
+      <van-button type='primary'>保存</van-button>
+    </view>
+  </view>
+</view>

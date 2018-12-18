@@ -14,3 +14,7 @@
 .comment-list .item:last-child {
   border-bottom: none;
 } 
+.comment-list .item .pinglun-pic {
+  width: 90rpx;
+  height: 60rpx;
+} 

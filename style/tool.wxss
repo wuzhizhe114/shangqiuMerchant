@@ -235,6 +235,10 @@
   margin-right: 32rpx;
 }
 
+.mr-22 {
+  margin-right: 22rpx;
+}
+
 .mr-10 {
   margin-right: 10rpx;
 }
@@ -396,6 +400,9 @@
 
 .al-s-center {
   align-self: center;
+}
+.al-s-start {
+  align-self: flex-start;
 }
 
 .fw-w {

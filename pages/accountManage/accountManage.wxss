@@ -1,0 +1,6 @@
+/* pages/accountManage/accountManage.wxss */
+.item .item-pic {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}

@@ -21,6 +21,7 @@ Page({
   onLoad: function(options) {
     this.echartsComponnet = this.selectComponent('#mychart');
     this.init_echarts(); //初始化图表
+    // console.log(app)
   },
   init_echarts: function() {
     this.echartsComponnet.init((canvas, width, height) => {
@@ -101,4 +102,19 @@ Page({
       return Chart;
     });
   },
+  imagesPreview() {
+    // app.imagesReview(this.data.picHost+'demo/first_pic.png',[
+    //   'https://clueless.gitee.io/shangqiuimages/merchant/demo/first_pic.png',
+    //   'https://clueless.gitee.io/shangqiuimages/merchant/demo/qiandama.png',
+    //   'https://clueless.gitee.io/shangqiuimages/merchant/demo/second_pic.png',
+    // ])
+    wx.previewImage({
+      current: this.data.picHost + 'demo/first_pic.png', // 当前显示图片的http链接
+      urls: [
+        'https://clueless.gitee.io/shangqiuimages/merchant/demo/first_pic.png',
+        'https://clueless.gitee.io/shangqiuimages/merchant/demo/qiandama.png',
+        'https://clueless.gitee.io/shangqiuimages/merchant/demo/second_pic.png',
+      ] // 需要预览的图片http链接列表
+    })
+  }
 })

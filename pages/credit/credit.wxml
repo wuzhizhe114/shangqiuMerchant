@@ -11,10 +11,10 @@
           <text>信用等级：</text>
           <text class='color-star'>
             <text class='iconfont icon-stars'></text>
-            <text class='iconfont icon-stars'></text>
-            <text class='iconfont icon-stars'></text>
-            <text class='iconfont icon-stars'></text>
-            <text class='iconfont icon-xingxingxianmiao'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-xingxingxianmiao'></text>
           </text>
         </view>
       </view>
@@ -27,10 +27,10 @@
       </navigator>
     </view>
     <view class='d-fl text-center jc-space-b'>
-      <view>
+      <navigator hover-class='none' url='/pages/productList/productList'>
         <view class='fs-42 fs-italic fw-bold'>12</view>
         <text class='color-gray2'>已发布商品</text>
-      </view>
+      </navigator>
       <view>
         <view class='fs-42 fs-italic fw-bold'>90%</view>
         <text class='color-gray2'>用户好评率</text>
@@ -53,10 +53,10 @@
   <view class='tongzhi pd-lr-30 bg-white box-sh mb-60'>
     <view class='lh-90 clearfix fs-32 gray-b-b'>
       <text class='fl-l theme-color'>通知公告</text>
-      <navigator class='fl-r color-gray fs-24' hover-class='none' url=''>更多</navigator>
+      <navigator class='fl-r color-gray fs-24' hover-class='none' url='/pages/announcement/announcement'>更多</navigator>
     </view>
     <view class='xiaoxi-list'>
-      <navigator class='list-item pd-tb-26 dash-gray-b' hover-class='none' url=''>
+      <navigator class='list-item pd-tb-26 dash-gray-b' hover-class='none' url='/pages/announcement/anDetail'>
         <view class='d-fl mb-10'>
           <text class='iconfont icon-laba theme-color mr-10'></text>
           <view class='fl-1 text-ell'>
@@ -88,7 +88,7 @@
       <navigator class='fl-r color-gray fs-24' hover-class='none' url='/pages/myComment/myComment'>更多</navigator>
     </view>
     <view class='pinglun-list'>
-      <navigator hover-class='none' url='/pages/myComment/myComment' class='list-item pd-tb-26 dash-gray-b'>
+      <!-- <navigator hover-class='none' url='/pages/myComment/myComment' class='list-item pd-tb-26 dash-gray-b'>
         <view class='d-fl mb-10'>
           <image class='user-pic mr-10' src='{{picHost}}demo/third_pic.png'></image>
           <view class='fl-1'>
@@ -118,35 +118,69 @@
           <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
           <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
         </view>
-      </navigator>
-      <navigator hover-class='none' url='' class='list-item pd-tb-26 dash-gray-b'>
-        <view class='d-fl mb-10'>
-          <image class='user-pic mr-10' src='{{picHost}}demo/third_pic.png'></image>
-          <view class='fl-1'>
-            <view class='d-fl mb-10'>
-              <view class='fl-1 text-ell fs-32'>
-                <text>某某用户</text>
-              </view>
-              <view class='color-star'>
-                <text class='iconfont icon-stars'></text>
-                <text class='iconfont icon-stars'></text>
-                <text class='iconfont icon-stars'></text>
-                <text class='iconfont icon-stars'></text>
-                <text class='iconfont icon-xingxingxianmiao'></text>
-              </view>
-            </view>
-            <view class='clearfix fs-22 color-666'>
-              <text class='fl-l'>2017-03-25</text>
-              <text class='fl-r'>好评</text>
-            </view>
-          </view>
+      </navigator> -->
+      <view class='list-item pd-tb-26 dash-gray-b'>
+        <view class='d-fl mb-20'>
+          <view class='name fl-1 fw-bold'>匿名用户：sdj210.0333</view>
+          <text class='ml-24 fs-22 color-gray'>2018-11-16</text>
         </view>
-        <view class='color-666 mb-10 text-ell'>
-          <text>服务态度差，缺斤少两</text>
+        <view class='mb-20 color-star'>
+          <text class='color-666'>信用评级：</text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-xingxingxianmiao'></text>
+        </view>
+        <view class='mb-20'>
+          <text class='iconfont icon-yinxiang theme-color mr-10 fs-36'></text>
+          <text>印象：</text>
+          <text class='round-tag'>价格公道</text>
+          <text class='round-tag'>价格公道</text>
+          <text class='round-tag'>价格公道</text>
+        </view>
+        <view class='mb-20'>
+          <text class='iconfont icon-pinglun theme-color mr-10 fs-36'></text>
+          <text>评语：</text>
+          <text class='theme-color'>价格公道</text>
         </view>
         <view>
+          <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10' catchtap='imagesPreview'></image>
+          <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
+          <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
         </view>
-      </navigator>
+      </view>
+      <view class='list-item pd-tb-26 dash-gray-b'>
+        <view class='d-fl mb-20'>
+          <view class='name fl-1 fw-bold'>匿名用户：sdj210.0333</view>
+          <text class='ml-24 fs-22 color-gray'>2018-11-16</text>
+        </view>
+        <view class='mb-20 color-star'>
+          <text class='color-666'>信用评级：</text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-xingxingxianmiao'></text>
+        </view>
+        <view class='mb-20'>
+          <text class='iconfont icon-yinxiang theme-color mr-10 fs-36'></text>
+          <text>印象：</text>
+          <text class='round-tag'>价格公道</text>
+          <text class='round-tag'>价格公道</text>
+          <text class='round-tag'>价格公道</text>
+        </view>
+        <view class='mb-20'>
+          <text class='iconfont icon-pinglun theme-color mr-10 fs-36'></text>
+          <text>评语：</text>
+          <text class='theme-color'>价格公道</text>
+        </view>
+        <view>
+          <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10' catchtap='imagesPreview'></image>
+          <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
+          <image src='{{picHost}}demo/first_pic.png' class='pinglun-pic mr-10'></image>
+        </view>
+      </view>
     </view>
   </view>
 </view>

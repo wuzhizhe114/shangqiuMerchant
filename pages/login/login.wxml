@@ -14,8 +14,9 @@
       <input class='input' placeholder-class='ph-color' type='password' placeholder='请输入密码'></input>
       <text class='iconfont icon-yanjing1 fs-36 color-gray'></text>
     </view>
-    <view class='text-right'>
-      <navigator hover-class='none' url='' class='theme-color fs-24'>忘记密码</navigator>
+    <view class='theme-color fs-24 clearfix'>
+      <navigator hover-class='none' url='/pages/regist/regist' class='fl-l'>注册</navigator>
+      <navigator hover-class='none' url='/pages/forgetPass/forgetPass' class='fl-r'>忘记密码</navigator>
     </view>
   </view>
   <view class='btn-box pd-lr-30'>

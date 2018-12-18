@@ -24,7 +24,7 @@
     </view>
   </view>
   <view class='xiaoxi mb-20 pd-lr-30 bg-white box-sh'>
-    <navigator class='item pd-tb-26 d-fl al-center gray-b-b2' hover-class='none' url=''>
+    <navigator class='item pd-tb-26 d-fl al-center gray-b-b2' hover-class='none' url='/pages/announcement/announcement'>
       <text class='iconfont icon-jianyi1 mr-10 mt-6 color-blue'></text>
       <text>消息通知</text>
       <view class='tips fl-1 fs-22 color-gray text-right mr-10 d-fl jc-end al-center'>
@@ -58,9 +58,9 @@
       </view>
       <text class='iconfont icon-xiangxia rotate-ne-90 fs-42'></text>
     </navigator>
-    <navigator class='item pd-tb-26 d-fl al-center' hover-class='none' url=''>
+    <navigator class='item pd-tb-26 d-fl al-center' hover-class='none' url='/pages/accountManage/accountManage'>
       <text class='iconfont icon-xitong mr-10 mt-6 color-666'></text>
-      <text>系统设置</text>
+      <text>账号管理</text>
       <view class='tips fl-1 fs-22 color-gray text-right mr-10 d-fl jc-end al-center'>
         <!-- <text class='mr-10'>您有5条新消息</text><text class='red-point'></text> -->
       </view>

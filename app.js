@@ -38,5 +38,12 @@ App({
   globalData: {
     userInfo: null,
     picHost: 'https://clueless.gitee.io/shangqiuimages/merchant/'
+  },
+  imagesReview(currentUrl,urlList){
+    // console.log('app',e)
+    wx.previewImage({
+      current: currentUrl, // 当前显示图片的http链接
+      urls: urlList // 需要预览的图片http链接列表
+    })
   }
 })
