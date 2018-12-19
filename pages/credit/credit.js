@@ -13,6 +13,74 @@ Page({
     ec: {
       lazyLoad: true // 延迟加载
     },
+    leidaOption: {
+      radar: {
+        name: {
+          formatter: '{value}'
+        },
+        indicator: [{
+          name: '商户真实性',
+          max: 100,
+        }, {
+          name: '合规经营情况',
+          max: 100,
+        }, {
+          name: '管理服务情况',
+          max: 100,
+        }, {
+          name: '消费环境情况',
+          max: 100,
+        }, {
+          name: '商品可信度',
+          max: 100,
+        },],
+        radius: 40,
+        center: ['50%', '55%']
+      },
+      grid: {
+        x: 0,
+        y: 0,
+        x2: 0,
+        y2: 0,
+      },
+      series: [{
+        areaStyle: {
+          normal: {
+            opacity: 0.5,
+          }
+        },
+        itemStyle: {
+          normal: {
+            lineStyle: {
+              width: 1,
+              borderColor: '#fc20ff',
+            },
+            color: '#04c9b3',
+            borderWidth: '1',
+            borderColor: '#04c9b3'
+          },
+        },
+        type: 'radar',
+        data: [{
+          value: [80, 90, 60, 90, 70],
+          name: '指标评分',
+          // 拐点显示数值
+          // label: {
+          //   normal: {
+          //     show: true,
+          //     formatter: function(params) {
+          //       return params.value;
+          //     },
+          //     position:'inside',
+          //     color: '#fa595e'
+          //   }
+          // }
+        }],
+      }],
+      textStyle: {
+        color: '#373738',
+      },
+    },
   },
 
   /**
@@ -30,74 +98,7 @@ Page({
         width: width,
         height: height
       });
-      Chart.setOption({
-        radar: {
-          name: {
-            formatter: '{value}'
-          },
-          indicator: [{
-            name: '合规经营',
-            max: 100,
-          }, {
-            name: '经营能力',
-            max: 100,
-          }, {
-            name: '真实身份',
-            max: 100,
-          }, {
-            name: '售后服务',
-            max: 100,
-          }, {
-            name: '网络安全',
-            max: 100,
-          }, ],
-          radius: 40,
-          center: ['50%', '55%']
-        },
-        grid: {
-          x: 0,
-          y: 0,
-          x2: 0,
-          y2: 0,
-        },
-        series: [{
-          areaStyle: {
-            normal: {
-              opacity: 0.5,
-            }
-          },
-          itemStyle: {
-            normal: {
-              lineStyle: {
-                width: 1,
-                borderColor: '#fc20ff',
-              },
-              color: '#04c9b3',
-              borderWidth: '1',
-              borderColor: '#04c9b3'
-            },
-          },
-          type: 'radar',
-          data: [{
-            value: [80, 90, 60, 90, 70],
-            name: '指标评分',
-            // 拐点显示数值
-            // label: {
-            //   normal: {
-            //     show: true,
-            //     formatter: function(params) {
-            //       return params.value;
-            //     },
-            //     position:'inside',
-            //     color: '#fa595e'
-            //   }
-            // }
-          }],
-        }],
-        textStyle: {
-          color: '#373738',
-        },
-      });
+      Chart.setOption(this.data.leidaOption);
       // 注意这里一定要返回 chart 实例，否则会影响事件处理等
       return Chart;
     });

@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/credit/credit",
     "pages/index/index",
     "pages/person/person",
     "pages/accountManage/accountManage",
     "pages/product/product",
     "pages/productAdd/productAdd",
     "pages/forgetPass/forgetPass",
-    "pages/credit/credit",
     "pages/announcement/anDetail",
     "pages/announcement/announcement",
     "pages/enterReview/enterReview",
